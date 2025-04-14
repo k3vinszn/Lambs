@@ -1,0 +1,616 @@
+fileFormatVersion: 2
+guid: 46f864bfe8ad0e748aab95130543e2ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2945702870929289505
+    second: TheIndigentStudio_b_0
+  - first:
+      213: -3722925775342496428
+    second: TheIndigentStudio_b_1
+  - first:
+      213: -3434606983206257207
+    second: TheIndigentStudio_b_2
+  - first:
+      213: 3478238514985983465
+    second: TheIndigentStudio_b_3
+  - first:
+      213: -7682640191587875661
+    second: TheIndigentStudio_b_4
+  - first:
+      213: 6205190982224776515
+    second: TheIndigentStudio_b_5
+  - first:
+      213: 4297284648729803401
+    second: TheIndigentStudio_b_6
+  - first:
+      213: 530682284108259830
+    second: TheIndigentStudio_b_7
+  - first:
+      213: -731335733461551122
+    second: TheIndigentStudio_b_8
+  - first:
+      213: 1713720789431207643
+    second: TheIndigentStudio_b_9
+  - first:
+      213: 7081945168403180154
+    second: TheIndigentStudio_b_10
+  - first:
+      213: -3526741196939217247
+    second: TheIndigentStudio_b_11
+  - first:
+      213: 6056881861690019067
+    second: TheIndigentStudio_b_12
+  - first:
+      213: 649195433160338536
+    second: TheIndigentStudio_b_13
+  - first:
+      213: -2895977076900538228
+    second: TheIndigentStudio_b_14
+  - first:
+      213: 7665531145612216936
+    second: TheIndigentStudio_b_15
+  - first:
+      213: 6285792481451571916
+    second: TheIndigentStudio_b_16
+  - first:
+      213: -6625947264672609949
+    second: TheIndigentStudio_b_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_0
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 4039
+        width: 1056
+        height: 1216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121b693772d31e820800000000000000
+      internalID: 2945702870929289505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_1
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 3152
+        width: 349
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45590937bb2855cc0800000000000000
+      internalID: -3722925775342496428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_2
+      rect:
+        serializedVersion: 2
+        x: 3987
+        y: 3152
+        width: 351
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd3ae66523d550d0800000000000000
+      internalID: -3434606983206257207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_3
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 3152
+        width: 264
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed52d9308f254030800000000000000
+      internalID: 3478238514985983465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 957
+        width: 304
+        height: 1740
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4044b3377c16590800000000000000
+      internalID: -7682640191587875661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 957
+        width: 1144
+        height: 1743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d07f262544d1650800000000000000
+      internalID: 6205190982224776515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_6
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 957
+        width: 1144
+        height: 1743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a774abe9503ab30800000000000000
+      internalID: 4297284648729803401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_7
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 957
+        width: 305
+        height: 1740
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1add8c9bc5d5700800000000000000
+      internalID: 530682284108259830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_8
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 957
+        width: 1144
+        height: 1743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee779737606c9d5f0800000000000000
+      internalID: -731335733461551122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_9
+      rect:
+        serializedVersion: 2
+        x: 4973
+        y: 957
+        width: 1144
+        height: 1743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6cf327afb58c710800000000000000
+      internalID: 1713720789431207643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_10
+      rect:
+        serializedVersion: 2
+        x: 6303
+        y: 957
+        width: 1144
+        height: 1743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a2771eb9f184260800000000000000
+      internalID: 7081945168403180154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_11
+      rect:
+        serializedVersion: 2
+        x: 7511
+        y: 957
+        width: 795
+        height: 1740
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6b3bd119f7e0fc0800000000000000
+      internalID: -3526741196939217247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_12
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 0
+        width: 301
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc4a8466fd5e0450800000000000000
+      internalID: 6056881861690019067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 6
+        width: 352
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ce35f8ec7620900800000000000000
+      internalID: 649195433160338536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_14
+      rect:
+        serializedVersion: 2
+        x: 3749
+        y: 0
+        width: 365
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c885bad213c6fc7d0800000000000000
+      internalID: -2895977076900538228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_15
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 6
+        width: 371
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ac8e496ff616a60800000000000000
+      internalID: 7665531145612216936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_16
+      rect:
+        serializedVersion: 2
+        x: 4735
+        y: 6
+        width: 32
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccafdb455fe9b3750800000000000000
+      internalID: 6285792481451571916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndigentStudio_b_17
+      rect:
+        serializedVersion: 2
+        x: 4882
+        y: 0
+        width: 436
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369c7bc8118eb04a0800000000000000
+      internalID: -6625947264672609949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TheIndigentStudio_b_0: 2945702870929289505
+      TheIndigentStudio_b_1: -3722925775342496428
+      TheIndigentStudio_b_10: 7081945168403180154
+      TheIndigentStudio_b_11: -3526741196939217247
+      TheIndigentStudio_b_12: 6056881861690019067
+      TheIndigentStudio_b_13: 649195433160338536
+      TheIndigentStudio_b_14: -2895977076900538228
+      TheIndigentStudio_b_15: 7665531145612216936
+      TheIndigentStudio_b_16: 6285792481451571916
+      TheIndigentStudio_b_17: -6625947264672609949
+      TheIndigentStudio_b_2: -3434606983206257207
+      TheIndigentStudio_b_3: 3478238514985983465
+      TheIndigentStudio_b_4: -7682640191587875661
+      TheIndigentStudio_b_5: 6205190982224776515
+      TheIndigentStudio_b_6: 4297284648729803401
+      TheIndigentStudio_b_7: 530682284108259830
+      TheIndigentStudio_b_8: -731335733461551122
+      TheIndigentStudio_b_9: 1713720789431207643
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

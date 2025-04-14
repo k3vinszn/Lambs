@@ -1,0 +1,3242 @@
+fileFormatVersion: 2
+guid: b2799e85dfa34bc469658b329fba741e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: SheepSpritesA_0
+  - first:
+      213: 21300002
+    second: SheepSpritesA_1
+  - first:
+      213: 21300004
+    second: SheepSpritesA_2
+  - first:
+      213: 21300006
+    second: SheepSpritesA_3
+  - first:
+      213: 21300008
+    second: SheepSpritesA_4
+  - first:
+      213: 21300010
+    second: SheepSpritesA_5
+  - first:
+      213: 21300012
+    second: SheepSpritesA_6
+  - first:
+      213: 21300014
+    second: SheepSpritesA_7
+  - first:
+      213: 21300016
+    second: SheepSpritesA_8
+  - first:
+      213: 21300018
+    second: SheepSpritesA_9
+  - first:
+      213: 21300020
+    second: SheepSpritesA_10
+  - first:
+      213: 21300022
+    second: SheepSpritesA_11
+  - first:
+      213: 21300024
+    second: SheepSpritesA_12
+  - first:
+      213: 21300026
+    second: SheepSpritesA_13
+  - first:
+      213: 21300028
+    second: SheepSpritesA_14
+  - first:
+      213: 21300030
+    second: SheepSpritesA_15
+  - first:
+      213: 21300032
+    second: SheepSpritesA_16
+  - first:
+      213: 21300034
+    second: SheepSpritesA_17
+  - first:
+      213: 21300036
+    second: SheepSpritesA_18
+  - first:
+      213: 21300038
+    second: SheepSpritesA_19
+  - first:
+      213: 21300040
+    second: SheepSpritesA_20
+  - first:
+      213: 21300042
+    second: SheepSpritesA_21
+  - first:
+      213: 21300044
+    second: SheepSpritesA_22
+  - first:
+      213: 21300046
+    second: SheepSpritesA_23
+  - first:
+      213: 21300048
+    second: SheepSpritesA_24
+  - first:
+      213: 21300050
+    second: SheepSpritesA_25
+  - first:
+      213: 21300052
+    second: SheepSpritesA_26
+  - first:
+      213: 21300054
+    second: SheepSpritesA_27
+  - first:
+      213: 21300056
+    second: SheepSpritesA_28
+  - first:
+      213: 21300058
+    second: SheepSpritesA_29
+  - first:
+      213: 21300060
+    second: SheepSpritesA_30
+  - first:
+      213: 21300062
+    second: SheepSpritesA_31
+  - first:
+      213: 21300064
+    second: SheepSpritesA_32
+  - first:
+      213: 21300066
+    second: SheepSpritesA_33
+  - first:
+      213: 21300068
+    second: SheepSpritesA_34
+  - first:
+      213: 21300070
+    second: SheepSpritesA_35
+  - first:
+      213: 21300072
+    second: SheepSpritesA_36
+  - first:
+      213: 21300074
+    second: SheepSpritesA_37
+  - first:
+      213: 21300076
+    second: SheepSpritesA_38
+  - first:
+      213: 21300078
+    second: SheepSpritesA_39
+  - first:
+      213: 21300080
+    second: SheepSpritesA_40
+  - first:
+      213: 21300082
+    second: SheepSpritesA_41
+  - first:
+      213: 21300084
+    second: SheepSpritesA_42
+  - first:
+      213: 21300086
+    second: SheepSpritesA_43
+  - first:
+      213: 21300088
+    second: SheepSpritesA_44
+  - first:
+      213: 21300090
+    second: SheepSpritesA_45
+  - first:
+      213: 21300092
+    second: SheepSpritesA_46
+  - first:
+      213: 21300094
+    second: SheepSpritesA_47
+  - first:
+      213: 21300096
+    second: SheepSpritesA_48
+  - first:
+      213: 21300098
+    second: SheepSpritesA_49
+  - first:
+      213: 21300100
+    second: SheepSpritesA_50
+  - first:
+      213: 21300102
+    second: SheepSpritesA_51
+  - first:
+      213: 21300104
+    second: SheepSpritesA_52
+  - first:
+      213: 21300106
+    second: SheepSpritesA_53
+  - first:
+      213: 21300108
+    second: SheepSpritesA_54
+  - first:
+      213: 21300110
+    second: SheepSpritesA_55
+  - first:
+      213: 21300112
+    second: SheepSpritesA_56
+  - first:
+      213: 21300114
+    second: SheepSpritesA_57
+  - first:
+      213: 21300116
+    second: SheepSpritesA_58
+  - first:
+      213: 21300118
+    second: SheepSpritesA_59
+  - first:
+      213: 21300120
+    second: SheepSpritesA_60
+  - first:
+      213: 21300122
+    second: SheepSpritesA_61
+  - first:
+      213: 21300124
+    second: SheepSpritesA_62
+  - first:
+      213: 21300126
+    second: SheepSpritesA_63
+  - first:
+      213: 21300128
+    second: SheepSpritesA_64
+  - first:
+      213: 21300130
+    second: SheepSpritesA_65
+  - first:
+      213: 21300132
+    second: SheepSpritesA_66
+  - first:
+      213: 21300134
+    second: SheepSpritesA_67
+  - first:
+      213: 21300136
+    second: SheepSpritesA_68
+  - first:
+      213: 21300138
+    second: SheepSpritesA_69
+  - first:
+      213: 21300140
+    second: SheepSpritesA_70
+  - first:
+      213: 21300142
+    second: SheepSpritesA_71
+  - first:
+      213: 21300144
+    second: SheepSpritesA_72
+  - first:
+      213: 21300146
+    second: SheepSpritesA_73
+  - first:
+      213: 21300148
+    second: SheepSpritesA_74
+  - first:
+      213: 21300150
+    second: SheepSpritesA_75
+  - first:
+      213: 21300152
+    second: SheepSpritesA_76
+  - first:
+      213: 21300154
+    second: SheepSpritesA_77
+  - first:
+      213: 21300156
+    second: SheepSpritesA_78
+  - first:
+      213: 21300158
+    second: SheepSpritesA_79
+  - first:
+      213: 21300160
+    second: SheepSpritesA_80
+  - first:
+      213: 21300162
+    second: SheepSpritesA_81
+  - first:
+      213: 21300164
+    second: SheepSpritesA_82
+  - first:
+      213: 21300166
+    second: SheepSpritesA_83
+  - first:
+      213: 21300168
+    second: SheepSpritesA_84
+  - first:
+      213: 21300170
+    second: SheepSpritesA_85
+  - first:
+      213: 21300172
+    second: SheepSpritesA_86
+  - first:
+      213: 21300174
+    second: SheepSpritesA_87
+  - first:
+      213: 21300176
+    second: SheepSpritesA_88
+  - first:
+      213: 21300178
+    second: SheepSpritesA_89
+  - first:
+      213: 21300180
+    second: SheepSpritesA_90
+  - first:
+      213: 21300182
+    second: SheepSpritesA_91
+  - first:
+      213: 21300184
+    second: SheepSpritesA_92
+  - first:
+      213: 21300186
+    second: SheepSpritesA_93
+  - first:
+      213: 21300188
+    second: SheepSpritesA_94
+  - first:
+      213: 21300190
+    second: SheepSpritesA_95
+  - first:
+      213: 21300192
+    second: SheepSpritesA_96
+  - first:
+      213: 21300194
+    second: SheepSpritesA_97
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 75
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SheepSpritesA_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 737
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 737
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 737
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 737
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 699
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 699
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 699
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 699
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 657
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 657
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 657
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 657
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 657
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_19
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 657
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 657
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_21
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 657
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 618
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 618
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_24
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 618
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_25
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 618
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_26
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 618
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_27
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 618
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_28
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 618
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_29
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 618
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 583
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_31
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 583
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_32
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 583
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_33
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 583
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_34
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 583
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_35
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 583
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_36
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 583
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_37
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 583
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_38
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 545
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_39
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 545
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_40
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 545
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_41
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 545
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_42
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 545
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_43
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 545
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_44
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 545
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_45
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 545
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_46
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 505
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_47
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 505
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_48
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 505
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_49
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 505
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_50
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 505
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_51
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 505
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 505
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88305410000000000800000000000000
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_53
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 505
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_54
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 461
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_55
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 461
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_56
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 461
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_57
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 461
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29305410000000000800000000000000
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_58
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 461
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_59
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 422
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_60
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 422
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_61
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 422
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_62
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 382
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 382
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9305410000000000800000000000000
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_64
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 382
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a305410000000000800000000000000
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_65
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 345
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a305410000000000800000000000000
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_66
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 345
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a305410000000000800000000000000
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_67
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 345
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a305410000000000800000000000000
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_68
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 306
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a305410000000000800000000000000
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_69
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 306
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa305410000000000800000000000000
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_70
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 306
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca305410000000000800000000000000
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_71
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 262
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea305410000000000800000000000000
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_72
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 262
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b305410000000000800000000000000
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_73
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 262
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b305410000000000800000000000000
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_74
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 214
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b305410000000000800000000000000
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_75
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 214
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_76
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 214
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b305410000000000800000000000000
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_77
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 214
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_78
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 214
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb305410000000000800000000000000
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_79
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 214
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb305410000000000800000000000000
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_80
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 169
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c305410000000000800000000000000
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_81
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 169
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_82
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 169
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c305410000000000800000000000000
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_83
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 169
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_84
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 169
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_85
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 169
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac305410000000000800000000000000
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_86
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 118
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_87
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 118
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_88
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 118
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d305410000000000800000000000000
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 118
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d305410000000000800000000000000
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_90
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 118
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_91
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 118
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_92
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 68
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d305410000000000800000000000000
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad305410000000000800000000000000
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_94
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 68
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd305410000000000800000000000000
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_95
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 68
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed305410000000000800000000000000
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_96
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 68
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e305410000000000800000000000000
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheepSpritesA_97
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 68
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e305410000000000800000000000000
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -152.5, y: -283}
+      - {x: -174.5, y: -283}
+      - {x: -185.5, y: -292}
+      - {x: -185.5, y: -306}
+      - {x: -184.5, y: -318}
+      - {x: -178.5, y: -319}
+      - {x: -161.5, y: -319}
+      - {x: -146.5, y: -309}
+      - {x: -146.5, y: -284}
+    - - {x: -124.5, y: -284}
+      - {x: -134.5, y: -284}
+      - {x: -143.5, y: -296}
+      - {x: -143.5, y: -308}
+      - {x: -141.5, y: -314}
+      - {x: -137.5, y: -319}
+      - {x: -115.5, y: -319}
+      - {x: -107.5, y: -315}
+      - {x: -107.5, y: -297}
+      - {x: -114.5, y: -287}
+    - - {x: -98.5, y: -283}
+      - {x: -104.5, y: -298}
+      - {x: -104.5, y: -313}
+      - {x: -100.5, y: -317}
+      - {x: -91.5, y: -319}
+      - {x: -79.5, y: -319}
+      - {x: -70.5, y: -312}
+      - {x: -70.5, y: -288}
+      - {x: -79.5, y: -283}
+    - - {x: -53.5, y: -284}
+      - {x: -67.5, y: -291}
+      - {x: -67.5, y: -311}
+      - {x: -64.5, y: -319}
+      - {x: -39.5, y: -319}
+      - {x: -27.5, y: -306}
+      - {x: -27.5, y: -293}
+      - {x: -30.5, y: -284}
+    - - {x: -17.5, y: -275}
+      - {x: -24.5, y: -278}
+      - {x: -24.5, y: -319}
+      - {x: 4.5, y: -319}
+      - {x: 10.5, y: -313}
+      - {x: 10.5, y: -284}
+      - {x: 7.5, y: -275}
+    - - {x: 13.5, y: -314}
+      - {x: 17.5, y: -319}
+      - {x: 42.5, y: -319}
+      - {x: 51.5, y: -315}
+      - {x: 51.5, y: -285}
+      - {x: 50.5, y: -284}
+      - {x: 18.5, y: -284}
+      - {x: 13.5, y: -295}
+    - - {x: -181.5, y: -233}
+      - {x: -185.5, y: -241}
+      - {x: -185.5, y: -266}
+      - {x: -184.5, y: -268}
+      - {x: -178.5, y: -269}
+      - {x: -161.5, y: -269}
+      - {x: -146.5, y: -258}
+      - {x: -146.5, y: -236}
+      - {x: -152.5, y: -233}
+    - - {x: -107.5, y: -235}
+      - {x: -113.5, y: -234}
+      - {x: -129.5, y: -234}
+      - {x: -143.5, y: -245}
+      - {x: -143.5, y: -253}
+      - {x: -141.5, y: -261}
+      - {x: -139.5, y: -267}
+      - {x: -127.5, y: -269}
+      - {x: -118.5, y: -269}
+      - {x: -103.5, y: -257}
+      - {x: -103.5, y: -243}
+      - {x: -104.5, y: -236}
+    - - {x: -92.5, y: -233}
+      - {x: -94.5, y: -234}
+      - {x: -100.5, y: -249}
+      - {x: -100.5, y: -262}
+      - {x: -96.5, y: -267}
+      - {x: -87.5, y: -269}
+      - {x: -75.5, y: -269}
+      - {x: -66.5, y: -264}
+      - {x: -66.5, y: -238}
+      - {x: -78.5, y: -233}
+    - - {x: -56.5, y: -234}
+      - {x: -63.5, y: -247}
+      - {x: -63.5, y: -255}
+      - {x: -61.5, y: -261}
+      - {x: -58.5, y: -267}
+      - {x: -50.5, y: -269}
+      - {x: -33.5, y: -269}
+      - {x: -27.5, y: -266}
+      - {x: -27.5, y: -242}
+      - {x: -30.5, y: -234}
+    - - {x: -16.5, y: -234}
+      - {x: -23.5, y: -242}
+      - {x: -23.5, y: -259}
+      - {x: -16.5, y: -269}
+      - {x: 11.5, y: -269}
+      - {x: 14.5, y: -259}
+      - {x: 14.5, y: -236}
+      - {x: 10.5, y: -234}
+    - - {x: 23.5, y: -225}
+      - {x: 17.5, y: -232}
+      - {x: 17.5, y: -269}
+      - {x: 50.5, y: -269}
+      - {x: 52.5, y: -265}
+      - {x: 52.5, y: -229}
+      - {x: 46.5, y: -225}
+    - - {x: -172.5, y: -183}
+      - {x: -178.5, y: -186}
+      - {x: -185.5, y: -194}
+      - {x: -185.5, y: -214}
+      - {x: -184.5, y: -218}
+      - {x: -142.5, y: -218}
+      - {x: -142.5, y: -200}
+      - {x: -157.5, y: -183}
+    - - {x: -128.5, y: -183}
+      - {x: -139.5, y: -187}
+      - {x: -139.5, y: -210}
+      - {x: -131.5, y: -218}
+      - {x: -107.5, y: -218}
+      - {x: -97.5, y: -209}
+      - {x: -97.5, y: -192}
+      - {x: -103.5, y: -183}
+    - - {x: -85.5, y: -180}
+      - {x: -94.5, y: -184}
+      - {x: -94.5, y: -215}
+      - {x: -88.5, y: -218}
+      - {x: -65.5, y: -218}
+      - {x: -61.5, y: -212}
+      - {x: -61.5, y: -184}
+      - {x: -64.5, y: -180}
+    - - {x: -52.5, y: -183}
+      - {x: -57.5, y: -187}
+      - {x: -57.5, y: -208}
+      - {x: -52.5, y: -218}
+      - {x: -23.5, y: -218}
+      - {x: -16.5, y: -212}
+      - {x: -16.5, y: -193}
+      - {x: -23.5, y: -185}
+      - {x: -32.5, y: -183}
+    - - {x: 2.5, y: -178}
+      - {x: -12.5, y: -189}
+      - {x: -12.5, y: -206}
+      - {x: -6.5, y: -218}
+      - {x: 16.5, y: -218}
+      - {x: 22.5, y: -212}
+      - {x: 22.5, y: -178}
+    - - {x: 32.5, y: -180}
+      - {x: 29.5, y: -181}
+      - {x: 25.5, y: -187}
+      - {x: 25.5, y: -208}
+      - {x: 32.5, y: -218}
+      - {x: 47.5, y: -218}
+      - {x: 53.5, y: -215}
+      - {x: 62.5, y: -207}
+      - {x: 62.5, y: -188}
+      - {x: 59.5, y: -180}
+    - - {x: -172.5, y: -138}
+      - {x: -178.5, y: -141}
+      - {x: -185.5, y: -149}
+      - {x: -185.5, y: -169}
+      - {x: -184.5, y: -173}
+      - {x: -142.5, y: -173}
+      - {x: -142.5, y: -155}
+      - {x: -157.5, y: -138}
+    - - {x: -128.5, y: -138}
+      - {x: -139.5, y: -142}
+      - {x: -139.5, y: -165}
+      - {x: -131.5, y: -173}
+      - {x: -107.5, y: -173}
+      - {x: -97.5, y: -164}
+      - {x: -97.5, y: -147}
+      - {x: -103.5, y: -138}
+    - - {x: -84.5, y: -135}
+      - {x: -93.5, y: -141}
+      - {x: -94.5, y: -147}
+      - {x: -94.5, y: -166}
+      - {x: -86.5, y: -173}
+      - {x: -72.5, y: -173}
+      - {x: -58.5, y: -169}
+      - {x: -58.5, y: -138}
+      - {x: -69.5, y: -135}
+    - - {x: -39.5, y: -133}
+      - {x: -54.5, y: -142}
+      - {x: -54.5, y: -161}
+      - {x: -50.5, y: -173}
+      - {x: -25.5, y: -173}
+      - {x: -19.5, y: -168}
+      - {x: -19.5, y: -133}
+    - - {x: -15.5, y: -138}
+      - {x: -15.5, y: -171}
+      - {x: -7.5, y: -173}
+      - {x: 21.5, y: -173}
+      - {x: 25.5, y: -167}
+      - {x: 25.5, y: -143}
+      - {x: 24.5, y: -138}
+    - - {x: 39.5, y: -135}
+      - {x: 30.5, y: -141}
+      - {x: 30.5, y: -168}
+      - {x: 37.5, y: -173}
+      - {x: 57.5, y: -173}
+      - {x: 63.5, y: -166}
+      - {x: 63.5, y: -141}
+      - {x: 58.5, y: -135}
+    - - {x: -178.5, y: -86}
+      - {x: -185.5, y: -88}
+      - {x: -185.5, y: -116}
+      - {x: -179.5, y: -125}
+      - {x: -163.5, y: -125}
+      - {x: -155.5, y: -115}
+      - {x: -155.5, y: -92}
+      - {x: -158.5, y: -86}
+    - - {x: -144.5, y: -86}
+      - {x: -152.5, y: -92}
+      - {x: -152.5, y: -111}
+      - {x: -147.5, y: -121}
+      - {x: -141.5, y: -125}
+      - {x: -133.5, y: -125}
+      - {x: -122.5, y: -119}
+      - {x: -122.5, y: -88}
+      - {x: -130.5, y: -86}
+    - - {x: -116.5, y: -86}
+      - {x: -118.5, y: -89}
+      - {x: -118.5, y: -118}
+      - {x: -110.5, y: -125}
+      - {x: -97.5, y: -125}
+      - {x: -91.5, y: -123}
+      - {x: -88.5, y: -114}
+      - {x: -88.5, y: -88}
+      - {x: -95.5, y: -86}
+    - - {x: -156.5, y: -48}
+      - {x: -160.5, y: -47}
+      - {x: -178.5, y: -47}
+      - {x: -185.5, y: -59}
+      - {x: -185.5, y: -72}
+      - {x: -180.5, y: -76}
+      - {x: -163.5, y: -81}
+      - {x: -154.5, y: -81}
+      - {x: -144.5, y: -73}
+      - {x: -142.5, y: -70}
+      - {x: -142.5, y: -63}
+    - - {x: -97.5, y: -56}
+      - {x: -114.5, y: -47}
+      - {x: -133.5, y: -47}
+      - {x: -139.5, y: -49}
+      - {x: -139.5, y: -80}
+      - {x: -130.5, y: -81}
+      - {x: -111.5, y: -81}
+      - {x: -98.5, y: -75}
+      - {x: -96.5, y: -74}
+      - {x: -96.5, y: -60}
+    - - {x: -89.5, y: -48}
+      - {x: -93.5, y: -57}
+      - {x: -93.5, y: -79}
+      - {x: -92.5, y: -81}
+      - {x: -50.5, y: -81}
+      - {x: -50.5, y: -57}
+      - {x: -67.5, y: -48}
+    - - {x: -184.5, y: -10}
+      - {x: -185.5, y: -13}
+      - {x: -185.5, y: -35}
+      - {x: -181.5, y: -42}
+      - {x: -157.5, y: -42}
+      - {x: -144.5, y: -38}
+      - {x: -140.5, y: -33}
+      - {x: -140.5, y: -17}
+      - {x: -147.5, y: -10}
+    - - {x: -104.5, y: -10}
+      - {x: -135.5, y: -10}
+      - {x: -137.5, y: -18}
+      - {x: -137.5, y: -35}
+      - {x: -130.5, y: -42}
+      - {x: -102.5, y: -42}
+      - {x: -92.5, y: -26}
+      - {x: -92.5, y: -19}
+    - - {x: -88.5, y: -10}
+      - {x: -89.5, y: -14}
+      - {x: -89.5, y: -41}
+      - {x: -80.5, y: -42}
+      - {x: -53.5, y: -42}
+      - {x: -44.5, y: -27}
+      - {x: -44.5, y: -19}
+      - {x: -56.5, y: -10}
+    - - {x: -174.5, y: 31}
+      - {x: -185.5, y: 26}
+      - {x: -185.5, y: 3}
+      - {x: -184.5, y: 1}
+      - {x: -175.5, y: -5}
+      - {x: -166.5, y: -5}
+      - {x: -146.5, y: 5}
+      - {x: -146.5, y: 31}
+    - - {x: -109.5, y: 31}
+      - {x: -131.5, y: 31}
+      - {x: -143.5, y: 23}
+      - {x: -143.5, y: -3}
+      - {x: -136.5, y: -5}
+      - {x: -116.5, y: -5}
+      - {x: -104.5, y: 6}
+      - {x: -103.5, y: 9}
+      - {x: -103.5, y: 28}
+    - - {x: -67.5, y: 30}
+      - {x: -92.5, y: 30}
+      - {x: -100.5, y: 22}
+      - {x: -100.5, y: -4}
+      - {x: -98.5, y: -5}
+      - {x: -69.5, y: -5}
+      - {x: -65.5, y: 0}
+      - {x: -60.5, y: 12}
+      - {x: -60.5, y: 28}
+    - - {x: -158.5, y: 71}
+      - {x: -175.5, y: 71}
+      - {x: -185.5, y: 68}
+      - {x: -185.5, y: 35}
+      - {x: -161.5, y: 35}
+      - {x: -159.5, y: 36}
+      - {x: -155.5, y: 41}
+      - {x: -155.5, y: 65}
+    - - {x: -145.5, y: 70}
+      - {x: -153.5, y: 66}
+      - {x: -153.5, y: 35}
+      - {x: -126.5, y: 35}
+      - {x: -123.5, y: 43}
+      - {x: -123.5, y: 65}
+      - {x: -132.5, y: 70}
+    - - {x: -114.5, y: 71}
+      - {x: -121.5, y: 67}
+      - {x: -121.5, y: 35}
+      - {x: -91.5, y: 35}
+      - {x: -91.5, y: 66}
+      - {x: -100.5, y: 71}
+    - - {x: -163.5, y: 109}
+      - {x: -178.5, y: 109}
+      - {x: -185.5, y: 106}
+      - {x: -185.5, y: 82}
+      - {x: -184.5, y: 74}
+      - {x: -157.5, y: 74}
+      - {x: -155.5, y: 75}
+      - {x: -155.5, y: 106}
+    - - {x: -119.5, y: 110}
+      - {x: -141.5, y: 110}
+      - {x: -153.5, y: 102}
+      - {x: -153.5, y: 76}
+      - {x: -146.5, y: 74}
+      - {x: -126.5, y: 74}
+      - {x: -114.5, y: 85}
+      - {x: -113.5, y: 88}
+      - {x: -113.5, y: 107}
+    - - {x: -84.5, y: 106}
+      - {x: -105.5, y: 106}
+      - {x: -108.5, y: 105}
+      - {x: -111.5, y: 96}
+      - {x: -111.5, y: 80}
+      - {x: -104.5, y: 74}
+      - {x: -75.5, y: 74}
+      - {x: -66.5, y: 89}
+      - {x: -66.5, y: 98}
+    - - {x: -55.5, y: 108}
+      - {x: -64.5, y: 105}
+      - {x: -64.5, y: 82}
+      - {x: -52.5, y: 74}
+      - {x: -26.5, y: 74}
+      - {x: -21.5, y: 78}
+      - {x: -21.5, y: 94}
+      - {x: -27.5, y: 108}
+    - - {x: -11.5, y: 113}
+      - {x: -19.5, y: 111}
+      - {x: -19.5, y: 80}
+      - {x: -13.5, y: 74}
+      - {x: 10.5, y: 74}
+      - {x: 10.5, y: 112}
+      - {x: 9.5, y: 113}
+    - - {x: -178.5, y: 154}
+      - {x: -186.5, y: 150}
+      - {x: -186.5, y: 126}
+      - {x: -179.5, y: 121}
+      - {x: -169.5, y: 118}
+      - {x: -161.5, y: 118}
+      - {x: -156.5, y: 128}
+      - {x: -156.5, y: 149}
+      - {x: -165.5, y: 154}
+    - - {x: -145.5, y: 155}
+      - {x: -154.5, y: 150}
+      - {x: -154.5, y: 133}
+      - {x: -153.5, y: 127}
+      - {x: -148.5, y: 118}
+      - {x: -129.5, y: 118}
+      - {x: -124.5, y: 129}
+      - {x: -124.5, y: 150}
+      - {x: -133.5, y: 155}
+    - - {x: -115.5, y: 155}
+      - {x: -122.5, y: 150}
+      - {x: -122.5, y: 123}
+      - {x: -119.5, y: 118}
+      - {x: -92.5, y: 118}
+      - {x: -92.5, y: 155}
+    - - {x: -82.5, y: 154}
+      - {x: -90.5, y: 149}
+      - {x: -90.5, y: 132}
+      - {x: -89.5, y: 126}
+      - {x: -85.5, y: 118}
+      - {x: -66.5, y: 118}
+      - {x: -60.5, y: 126}
+      - {x: -60.5, y: 149}
+      - {x: -69.5, y: 154}
+    - - {x: -56.5, y: 152}
+      - {x: -58.5, y: 149}
+      - {x: -58.5, y: 121}
+      - {x: -56.5, y: 118}
+      - {x: -33.5, y: 118}
+      - {x: -28.5, y: 120}
+      - {x: -28.5, y: 147}
+      - {x: -32.5, y: 152}
+    - - {x: -18.5, y: 151}
+      - {x: -26.5, y: 146}
+      - {x: -26.5, y: 126}
+      - {x: -22.5, y: 118}
+      - {x: -0.5, y: 118}
+      - {x: 3.5, y: 125}
+      - {x: 3.5, y: 146}
+      - {x: -5.5, y: 151}
+    - - {x: 8.5, y: 151}
+      - {x: 5.5, y: 148}
+      - {x: 5.5, y: 123}
+      - {x: 10.5, y: 118}
+      - {x: 22.5, y: 118}
+      - {x: 35.5, y: 122}
+      - {x: 35.5, y: 146}
+      - {x: 30.5, y: 151}
+    - - {x: 42.5, y: 151}
+      - {x: 37.5, y: 146}
+      - {x: 37.5, y: 126}
+      - {x: 42.5, y: 118}
+      - {x: 66.5, y: 118}
+      - {x: 67.5, y: 120}
+      - {x: 67.5, y: 146}
+      - {x: 61.5, y: 151}
+    - - {x: -147.5, y: 190}
+      - {x: -156.5, y: 192}
+      - {x: -176.5, y: 192}
+      - {x: -186.5, y: 184}
+      - {x: -186.5, y: 160}
+      - {x: -179.5, y: 158}
+      - {x: -156.5, y: 158}
+      - {x: -146.5, y: 161}
+      - {x: -146.5, y: 189}
+    - - {x: -132.5, y: 193}
+      - {x: -144.5, y: 186}
+      - {x: -144.5, y: 163}
+      - {x: -135.5, y: 158}
+      - {x: -124.5, y: 158}
+      - {x: -103.5, y: 171}
+      - {x: -103.5, y: 191}
+      - {x: -108.5, y: 193}
+    - - {x: -101.5, y: 162}
+      - {x: -100.5, y: 158}
+      - {x: -80.5, y: 158}
+      - {x: -61.5, y: 168}
+      - {x: -61.5, y: 194}
+      - {x: -95.5, y: 194}
+      - {x: -101.5, y: 190}
+    - - {x: -46.5, y: 194}
+      - {x: -59.5, y: 186}
+      - {x: -59.5, y: 160}
+      - {x: -53.5, y: 158}
+      - {x: -29.5, y: 158}
+      - {x: -21.5, y: 166}
+      - {x: -21.5, y: 194}
+    - - {x: -14.5, y: 193}
+      - {x: -19.5, y: 188}
+      - {x: -19.5, y: 164}
+      - {x: -13.5, y: 158}
+      - {x: 14.5, y: 158}
+      - {x: 18.5, y: 163}
+      - {x: 18.5, y: 193}
+    - - {x: 27.5, y: 191}
+      - {x: 20.5, y: 181}
+      - {x: 20.5, y: 171}
+      - {x: 26.5, y: 158}
+      - {x: 54.5, y: 158}
+      - {x: 59.5, y: 164}
+      - {x: 59.5, y: 191}
+    - - {x: 69.5, y: 191}
+      - {x: 61.5, y: 187}
+      - {x: 61.5, y: 167}
+      - {x: 66.5, y: 158}
+      - {x: 91.5, y: 158}
+      - {x: 101.5, y: 167}
+      - {x: 101.5, y: 191}
+    - - {x: 112.5, y: 190}
+      - {x: 103.5, y: 182}
+      - {x: 103.5, y: 164}
+      - {x: 112.5, y: 158}
+      - {x: 127.5, y: 158}
+      - {x: 144.5, y: 164}
+      - {x: 144.5, y: 187}
+      - {x: 134.5, y: 190}
+    - - {x: -180.5, y: 227}
+      - {x: -186.5, y: 216}
+      - {x: -186.5, y: 199}
+      - {x: -181.5, y: 196}
+      - {x: -145.5, y: 196}
+      - {x: -142.5, y: 202}
+      - {x: -142.5, y: 221}
+      - {x: -160.5, y: 227}
+    - - {x: -110.5, y: 228}
+      - {x: -140.5, y: 228}
+      - {x: -140.5, y: 196}
+      - {x: -116.5, y: 196}
+      - {x: -100.5, y: 199}
+      - {x: -96.5, y: 201}
+      - {x: -95.5, y: 202}
+      - {x: -95.5, y: 224}
+    - - {x: -93.5, y: 228}
+      - {x: -93.5, y: 202}
+      - {x: -89.5, y: 196}
+      - {x: -65.5, y: 196}
+      - {x: -51.5, y: 201}
+      - {x: -50.5, y: 208}
+      - {x: -50.5, y: 221}
+      - {x: -56.5, y: 228}
+    - - {x: -42.5, y: 228}
+      - {x: -48.5, y: 217}
+      - {x: -48.5, y: 200}
+      - {x: -41.5, y: 196}
+      - {x: -6.5, y: 196}
+      - {x: -6.5, y: 224}
+      - {x: -20.5, y: 228}
+    - - {x: -4.5, y: 228}
+      - {x: -4.5, y: 201}
+      - {x: 1.5, y: 196}
+      - {x: 29.5, y: 196}
+      - {x: 38.5, y: 209}
+      - {x: 38.5, y: 228}
+    - - {x: 70.5, y: 228}
+      - {x: 47.5, y: 228}
+      - {x: 40.5, y: 216}
+      - {x: 40.5, y: 199}
+      - {x: 56.5, y: 196}
+      - {x: 72.5, y: 196}
+      - {x: 81.5, y: 205}
+      - {x: 84.5, y: 213}
+      - {x: 84.5, y: 220}
+    - - {x: 88.5, y: 196}
+      - {x: 117.5, y: 196}
+      - {x: 130.5, y: 203}
+      - {x: 130.5, y: 221}
+      - {x: 123.5, y: 229}
+      - {x: 86.5, y: 229}
+      - {x: 86.5, y: 200}
+    - - {x: 137.5, y: 227}
+      - {x: 132.5, y: 225}
+      - {x: 132.5, y: 196}
+      - {x: 171.5, y: 196}
+      - {x: 176.5, y: 207}
+      - {x: 176.5, y: 220}
+      - {x: 159.5, y: 227}
+    - - {x: -186.5, y: 267}
+      - {x: -186.5, y: 243}
+      - {x: -183.5, y: 236}
+      - {x: -166.5, y: 231}
+      - {x: -159.5, y: 231}
+      - {x: -143.5, y: 240}
+      - {x: -143.5, y: 264}
+      - {x: -155.5, y: 267}
+    - - {x: -129.5, y: 266}
+      - {x: -141.5, y: 261}
+      - {x: -141.5, y: 235}
+      - {x: -129.5, y: 231}
+      - {x: -108.5, y: 231}
+      - {x: -97.5, y: 242}
+      - {x: -97.5, y: 253}
+      - {x: -112.5, y: 266}
+    - - {x: -84.5, y: 265}
+      - {x: -94.5, y: 255}
+      - {x: -94.5, y: 237}
+      - {x: -86.5, y: 231}
+      - {x: -62.5, y: 231}
+      - {x: -52.5, y: 239}
+      - {x: -51.5, y: 240}
+      - {x: -51.5, y: 252}
+      - {x: -69.5, y: 265}
+    - - {x: -41.5, y: 267}
+      - {x: -48.5, y: 264}
+      - {x: -48.5, y: 240}
+      - {x: -46.5, y: 231}
+      - {x: -21.5, y: 231}
+      - {x: -4.5, y: 244}
+      - {x: -4.5, y: 254}
+      - {x: -25.5, y: 267}
+    - - {x: 25.5, y: 266}
+      - {x: 13.5, y: 266}
+      - {x: -1.5, y: 260}
+      - {x: -1.5, y: 240}
+      - {x: 9.5, y: 231}
+      - {x: 25.5, y: 231}
+      - {x: 41.5, y: 241}
+      - {x: 43.5, y: 242}
+      - {x: 43.5, y: 246}
+      - {x: 42.5, y: 249}
+    - - {x: 61.5, y: 265}
+      - {x: 46.5, y: 257}
+      - {x: 46.5, y: 236}
+      - {x: 58.5, y: 231}
+      - {x: 85.5, y: 231}
+      - {x: 90.5, y: 236}
+      - {x: 90.5, y: 247}
+      - {x: 74.5, y: 265}
+    - - {x: 118.5, y: 266}
+      - {x: 111.5, y: 266}
+      - {x: 101.5, y: 262}
+      - {x: 93.5, y: 259}
+      - {x: 93.5, y: 236}
+      - {x: 110.5, y: 231}
+      - {x: 118.5, y: 231}
+      - {x: 137.5, y: 239}
+      - {x: 137.5, y: 246}
+      - {x: 132.5, y: 253}
+    - - {x: 168.5, y: 267}
+      - {x: 155.5, y: 267}
+      - {x: 140.5, y: 259}
+      - {x: 140.5, y: 243}
+      - {x: 157.5, y: 231}
+      - {x: 171.5, y: 231}
+      - {x: 182.5, y: 240}
+      - {x: 184.5, y: 243}
+      - {x: 184.5, y: 250}
+    - - {x: -184.5, y: 308}
+      - {x: -186.5, y: 305}
+      - {x: -186.5, y: 271}
+      - {x: -183.5, y: 270}
+      - {x: -164.5, y: 270}
+      - {x: -156.5, y: 280}
+      - {x: -156.5, y: 306}
+      - {x: -163.5, y: 308}
+    - - {x: -146.5, y: 308}
+      - {x: -154.5, y: 307}
+      - {x: -154.5, y: 270}
+      - {x: -124.5, y: 270}
+      - {x: -124.5, y: 306}
+      - {x: -127.5, y: 308}
+    - - {x: -120.5, y: 308}
+      - {x: -122.5, y: 301}
+      - {x: -122.5, y: 279}
+      - {x: -116.5, y: 271}
+      - {x: -111.5, y: 270}
+      - {x: -98.5, y: 270}
+      - {x: -92.5, y: 282}
+      - {x: -92.5, y: 306}
+      - {x: -97.5, y: 308}
+    - - {x: -90.5, y: 306}
+      - {x: -90.5, y: 276}
+      - {x: -88.5, y: 270}
+      - {x: -63.5, y: 270}
+      - {x: -60.5, y: 277}
+      - {x: -60.5, y: 305}
+      - {x: -61.5, y: 306}
+    - - {x: -50.5, y: 305}
+      - {x: -58.5, y: 302}
+      - {x: -58.5, y: 276}
+      - {x: -51.5, y: 270}
+      - {x: -30.5, y: 270}
+      - {x: -28.5, y: 276}
+      - {x: -28.5, y: 304}
+      - {x: -29.5, y: 305}
+    - - {x: -23.5, y: 308}
+      - {x: -26.5, y: 302}
+      - {x: -26.5, y: 284}
+      - {x: -15.5, y: 270}
+      - {x: -9.5, y: 270}
+      - {x: -2.5, y: 273}
+      - {x: 3.5, y: 282}
+      - {x: 3.5, y: 306}
+      - {x: -4.5, y: 308}
+    - - {x: 6.5, y: 274}
+      - {x: 8.5, y: 270}
+      - {x: 25.5, y: 270}
+      - {x: 36.5, y: 276}
+      - {x: 36.5, y: 309}
+      - {x: 9.5, y: 309}
+      - {x: 6.5, y: 302}
+    - - {x: 47.5, y: 309}
+      - {x: 40.5, y: 307}
+      - {x: 40.5, y: 282}
+      - {x: 47.5, y: 270}
+      - {x: 60.5, y: 270}
+      - {x: 70.5, y: 277}
+      - {x: 70.5, y: 304}
+      - {x: 67.5, y: 309}
+    - - {x: -176.5, y: 345}
+      - {x: -186.5, y: 340}
+      - {x: -186.5, y: 329}
+      - {x: -175.5, y: 312}
+      - {x: -151.5, y: 312}
+      - {x: -143.5, y: 314}
+      - {x: -139.5, y: 321}
+      - {x: -139.5, y: 343}
+      - {x: -146.5, y: 345}
+    - - {x: -129.5, y: 345}
+      - {x: -136.5, y: 334}
+      - {x: -136.5, y: 327}
+      - {x: -127.5, y: 312}
+      - {x: -92.5, y: 312}
+      - {x: -91.5, y: 315}
+      - {x: -91.5, y: 345}
+    - - {x: -86.5, y: 344}
+      - {x: -87.5, y: 341}
+      - {x: -87.5, y: 334}
+      - {x: -80.5, y: 323}
+      - {x: -76.5, y: 316}
+      - {x: -72.5, y: 313}
+      - {x: -67.5, y: 312}
+      - {x: -54.5, y: 312}
+      - {x: -41.5, y: 319}
+      - {x: -41.5, y: 344}
+    - - {x: -30.5, y: 344}
+      - {x: -33.5, y: 339}
+      - {x: -33.5, y: 325}
+      - {x: -29.5, y: 312}
+      - {x: -0.5, y: 312}
+      - {x: 6.5, y: 314}
+      - {x: 6.5, y: 344}
+    - - {x: -35.5, y: 347}
+      - {x: -37.5, y: 345}
+      - {x: -37.5, y: 340}
+      - {x: -35.5, y: 338}
+      - {x: -29.5, y: 338}
+      - {x: -27.5, y: 339}
+      - {x: -27.5, y: 343}
+      - {x: -29.5, y: 347}
+    - - {x: -152.5, y: 383}
+      - {x: -186.5, y: 383}
+      - {x: -186.5, y: 359}
+      - {x: -172.5, y: 350}
+      - {x: -153.5, y: 350}
+      - {x: -138.5, y: 368}
+      - {x: -138.5, y: 375}
+      - {x: -139.5, y: 376}
+    - - {x: -124.5, y: 382}
+      - {x: -133.5, y: 380}
+      - {x: -135.5, y: 377}
+      - {x: -135.5, y: 359}
+      - {x: -121.5, y: 350}
+      - {x: -100.5, y: 350}
+      - {x: -95.5, y: 361}
+      - {x: -95.5, y: 376}
+      - {x: -105.5, y: 382}
+    - - {x: -72.5, y: 382}
+      - {x: -81.5, y: 380}
+      - {x: -83.5, y: 377}
+      - {x: -83.5, y: 359}
+      - {x: -69.5, y: 350}
+      - {x: -48.5, y: 350}
+      - {x: -43.5, y: 361}
+      - {x: -43.5, y: 376}
+      - {x: -53.5, y: 382}
+    - - {x: -20.5, y: 383}
+      - {x: -26.5, y: 381}
+      - {x: -26.5, y: 354}
+      - {x: -16.5, y: 350}
+      - {x: 13.5, y: 350}
+      - {x: 18.5, y: 362}
+      - {x: 18.5, y: 371}
+      - {x: 5.5, y: 383}
+    - - {x: -94.5, y: 380}
+      - {x: -95.5, y: 377}
+      - {x: -95.5, y: 370}
+      - {x: -92.5, y: 369}
+      - {x: -86.5, y: 369}
+      - {x: -86.5, y: 377}
+      - {x: -87.5, y: 380}
+    - - {x: -38.5, y: 381}
+      - {x: -40.5, y: 379}
+      - {x: -40.5, y: 374}
+      - {x: -38.5, y: 372}
+      - {x: -32.5, y: 372}
+      - {x: -30.5, y: 373}
+      - {x: -30.5, y: 377}
+      - {x: -32.5, y: 381}
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SheepSpritesA_63: 21300126
+      SheepSpritesA_52: 21300104
+      SheepSpritesA_69: 21300138
+      SheepSpritesA_58: 21300116
+      SheepSpritesA_29: 21300058
+      SheepSpritesA_68: 21300136
+      SheepSpritesA_74: 21300148
+      SheepSpritesA_77: 21300154
+      SheepSpritesA_30: 21300060
+      SheepSpritesA_80: 21300160
+      SheepSpritesA_7: 21300014
+      SheepSpritesA_62: 21300124
+      SheepSpritesA_82: 21300164
+      SheepSpritesA_37: 21300074
+      SheepSpritesA_78: 21300156
+      SheepSpritesA_48: 21300096
+      SheepSpritesA_4: 21300008
+      SheepSpritesA_6: 21300012
+      SheepSpritesA_61: 21300122
+      SheepSpritesA_59: 21300118
+      SheepSpritesA_36: 21300072
+      SheepSpritesA_71: 21300142
+      SheepSpritesA_84: 21300168
+      SheepSpritesA_10: 21300020
+      SheepSpritesA_49: 21300098
+      SheepSpritesA_35: 21300070
+      SheepSpritesA_88: 21300176
+      SheepSpritesA_91: 21300182
+      SheepSpritesA_32: 21300064
+      SheepSpritesA_50: 21300100
+      SheepSpritesA_24: 21300048
+      SheepSpritesA_64: 21300128
+      SheepSpritesA_51: 21300102
+      SheepSpritesA_94: 21300188
+      SheepSpritesA_81: 21300162
+      SheepSpritesA_14: 21300028
+      SheepSpritesA_95: 21300190
+      SheepSpritesA_67: 21300134
+      SheepSpritesA_97: 21300194
+      SheepSpritesA_45: 21300090
+      SheepSpritesA_41: 21300082
+      SheepSpritesA_22: 21300044
+      SheepSpritesA_85: 21300170
+      SheepSpritesA_2: 21300004
+      SheepSpritesA_39: 21300078
+      SheepSpritesA_86: 21300172
+      SheepSpritesA_96: 21300192
+      SheepSpritesA_40: 21300080
+      SheepSpritesA_23: 21300046
+      SheepSpritesA_70: 21300140
+      SheepSpritesA_54: 21300108
+      SheepSpritesA_57: 21300114
+      SheepSpritesA_0: 21300000
+      SheepSpritesA_12: 21300024
+      SheepSpritesA_21: 21300042
+      SheepSpritesA_42: 21300084
+      SheepSpritesA_55: 21300110
+      SheepSpritesA_60: 21300120
+      SheepSpritesA_92: 21300184
+      SheepSpritesA_83: 21300166
+      SheepSpritesA_8: 21300016
+      SheepSpritesA_44: 21300088
+      SheepSpritesA_38: 21300076
+      SheepSpritesA_75: 21300150
+      SheepSpritesA_72: 21300144
+      SheepSpritesA_20: 21300040
+      SheepSpritesA_16: 21300032
+      SheepSpritesA_73: 21300146
+      SheepSpritesA_17: 21300034
+      SheepSpritesA_27: 21300054
+      SheepSpritesA_65: 21300130
+      SheepSpritesA_34: 21300068
+      SheepSpritesA_56: 21300112
+      SheepSpritesA_79: 21300158
+      SheepSpritesA_87: 21300174
+      SheepSpritesA_33: 21300066
+      SheepSpritesA_46: 21300092
+      SheepSpritesA_76: 21300152
+      SheepSpritesA_47: 21300094
+      SheepSpritesA_18: 21300036
+      SheepSpritesA_25: 21300050
+      SheepSpritesA_15: 21300030
+      SheepSpritesA_26: 21300052
+      SheepSpritesA_28: 21300056
+      SheepSpritesA_66: 21300132
+      SheepSpritesA_93: 21300186
+      SheepSpritesA_53: 21300106
+      SheepSpritesA_89: 21300178
+      SheepSpritesA_19: 21300038
+      SheepSpritesA_90: 21300180
+      SheepSpritesA_31: 21300062
+      SheepSpritesA_43: 21300086
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

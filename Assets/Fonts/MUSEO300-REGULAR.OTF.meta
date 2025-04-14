@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 68f7ef908c2d3c042bc20347aa6a666c
+timeCreated: 1491680185
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Museo
+  fontNames:
+  - Museo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 42c7c342c6babf84da54549a7e72de4a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
