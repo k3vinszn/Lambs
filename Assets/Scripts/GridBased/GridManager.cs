@@ -81,6 +81,13 @@ public class GridManager : MonoBehaviour
 
     void Update()
     {
+
+        // Add this early return at the start of the Update method
+        if (dog.GetComponent<Doggy>().IsMoving)
+        {
+            return; // Ignore all input during movement
+        }
+
         //update UI moves left
         MovesLeftVariableObj.text = "" + (MaxMoves - currentMoves);
 
