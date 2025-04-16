@@ -49,8 +49,14 @@ using UnityEngine.UI;
 	// Use this for initialization
 	void Awake()
 	{
-		StartingSheep = GameObject.FindGameObjectsWithTag("Sheep");
-		UpdateSheepList();
+
+        // Ensure game is unpaused when level loads
+        Game.Pause = false;
+        Time.timeScale = 1;
+
+
+        StartingSheep = GameObject.FindGameObjectsWithTag("Sheep");
+        UpdateSheepList();
 
         //CALCULATE NEEDED SCORE TO WIN
         Score = 0;
@@ -62,11 +68,18 @@ using UnityEngine.UI;
 		Game.MovingSheeps = 0;
 		Game.PathComplete = false;
 
-		foreach(GameObject S in Game.Sheeps)
-		{
-			MaxGoal++;
-		}
-	}
+        Score = 0;
+        MaxGoal = 0;
+        Game.ActiveLogic = true;
+        DestroyedSheeps = 0;
+        Game.MovingSheeps = 0;
+        Game.PathComplete = false;
+
+        foreach (GameObject S in Game.Sheeps)
+        {
+            MaxGoal++;
+        }
+    }
 
 	public void UpdateSheepList()
 	{
@@ -198,29 +211,34 @@ using UnityEngine.UI;
 		}
 
 	}
-		
-	public void PauseGame()
-	{
-		Game.Pause = true;
-		Game.ActiveLogic = false;
-		PausedPanel.SetActive (true);
-		PauseButton.SetActive (false);
-	}
 
-	public void UnpauseGame()
-	{
-		Game.Pause = false;
-		Game.ActiveLogic = true;
-		PausedPanel.SetActive (false);
-		PauseButton.SetActive (true);
-	}
+    public void PauseGame()
+    {
+        Game.Pause = true; // Add this line
+        Game.ActiveLogic = !Game.Pause;
+        Time.timeScale = Game.Pause ? 0 : 1; // Freeze/unfreeze game
+        PausedPanel.SetActive(true);
+        PauseButton.SetActive(false);
+    }
 
-	public void Restart()
-	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	}
+    public void UnpauseGame()
+    {
+        Game.Pause = false; // Add this line
+        Game.ActiveLogic = !Game.Pause;
+        Time.timeScale = Game.Pause ? 0 : 1; // Freeze/unfreeze game
+        PausedPanel.SetActive(false);
+        PauseButton.SetActive(true);
+    }
 
-	public void NextLevel()
+    public void Restart()
+    {
+        // Unpause the game before reloading
+        Game.Pause = false;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NextLevel()
 	{
 		if (SceneManager.GetActiveScene().buildIndex <= SceneManager.sceneCountInBuildSettings)
 		{
