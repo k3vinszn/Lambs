@@ -10,47 +10,53 @@ using UnityEngine.UIElements;
 
 public class GridManager : MonoBehaviour
 {
-    private GameObject Tile;
-
+    // === Grid Config ===
     public float MaxMoves;
     public Vector2Int GridSize;
     public Vector2Int GridOffset;
+
     private Vector2Int currentGridSize = new Vector2Int(0, 0);
     private Vector2Int currentGridOffset = new Vector2Int(100, 100);
 
-    public List<Vector3Int> gridpoints;
     public float GizmoSize = 0.25f;
-
+    public List<Vector3Int> gridpoints;
     public List<GameObject> Tiles;
     public List<GameObject> TilePath;
 
-    public GameObject previousTileSelected;
-    public bool pathBlocked = false;
-
-    private Camera cam;
+    private GameObject Tile;
     private GameObject[] Blockers;
-    public GameObject[] SheepsUI;
 
-    public GameObject dog;
-    public GameObject LineDrawing;
-
-    private Transform DiscStart;
-    private Transform DiscEnd;
-    public bool showTutorial = false;
-    private UnityEngine.UI.Image DrawingOverlay;
-
-    public static bool startPuzzle = false;
-    public float RecordDistance;
-
-    private Polyline line;
-    private float currentMoves;
-
+    // === UI ===
     public Text MovesLeftVariableObj;
     public UnityEngine.UI.Image MovesLeftImageObj;
+    public UnityEngine.UI.Image DrawingOverlay;
+    public GameObject[] SheepsUI;
+    public GameObject LineDrawing;
+
+    // === Player and Pathing ===
+    public GameObject dog;
+    public GameObject previousTileSelected;
+    public bool pathBlocked = false;
+    public float RecordDistance;
+    private float currentMoves;
+
+    private Camera cam;
+    private Polyline line;
+
+    // === Discs ===
+    private Transform DiscStart;
+    private Transform DiscEnd;
+
+    // === Flags ===
+    public bool showTutorial = false;
+    public static bool startPuzzle = false;
+
+    // ===========================
+    // == MonoBehaviour Events ===
+    // ===========================
 
     void Awake()
     {
-        //Find and Load Stuff
         cam = Camera.main;
         SheepsUI = GameObject.FindGameObjectsWithTag("SheepDisc");
         Blockers = GameObject.FindGameObjectsWithTag("BLOCKER");
@@ -59,219 +65,212 @@ public class GridManager : MonoBehaviour
         DrawingOverlay = GameObject.FindGameObjectWithTag("DrawingOverlay").GetComponent<UnityEngine.UI.Image>();
         Tile = Resources.Load("GridTile") as GameObject;
 
-        //Add Discs
         DiscStart = transform.GetChild(0);
         DiscEnd = transform.GetChild(1);
 
-        //Add line first point
         Vector3 p = new Vector3(dog.transform.position.x, dog.transform.position.z, 0);
         line.AddPoint(p);
+
         DiscStart.position = new Vector3(dog.transform.position.x, DiscStart.position.y, dog.transform.position.z);
         DiscEnd.position = new Vector3(dog.transform.position.x, DiscEnd.position.y, dog.transform.position.z);
 
-        if (DiscStart.gameObject.activeSelf == true)
-            DiscStart.gameObject.SetActive(false);
+        DiscStart.gameObject.SetActive(false);
+        DiscEnd.gameObject.SetActive(false);
 
-        if (DiscEnd.gameObject.activeSelf == true)
-            DiscEnd.gameObject.SetActive(false);
-
-        GridManager.startPuzzle = false;
+        startPuzzle = false;
         GenerateGrid();
     }
 
     void Update()
     {
-
-        // Add this early return at the start of the Update method
         if (dog.GetComponent<Doggy>().IsMoving)
-        {
-            return; // Ignore all input during movement
-        }
+            return;
 
-        //update UI moves left
-        MovesLeftVariableObj.text = "" + (MaxMoves - currentMoves);
+        // Update moves UI
+        int movesLeft = (int)(MaxMoves - currentMoves);
+        MovesLeftVariableObj.text = movesLeft.ToString();
+        MovesLeftImageObj.color = (movesLeft > 0)
+            ? new Color(1, 0.784f, 0.196f, 1)
+            : new Color(1, 0.294f, 0.392f, 1);
 
-        if ((MaxMoves - currentMoves) > 0)
-        {
-            //update UI moves left color
-            MovesLeftImageObj.color = new Color(1, 0.784f, 0.196f, 1);
-        }
-        else
-        {
-            //update UI moves left color
-            MovesLeftImageObj.color = new Color(1, 0.294f, 0.392f, 1);
-        }
+        if (!Game.ActiveLogic)
+            return;
 
-        //IF GAME IS NOT PAUSED
-        if (Game.ActiveLogic)
+        if (Input.GetMouseButton(0))
+            HandleMouseHold();
+
+        if (Input.GetMouseButtonUp(0))
+            HandleMouseRelease();
+
+        if (Input.GetMouseButtonUp(1))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    // =======================
+    // == Mouse Interactions ==
+    // =======================
+
+    void HandleMouseHold()
+    {
+        if (!DiscStart.gameObject.activeSelf) DiscStart.gameObject.SetActive(true);
+        if (!DiscEnd.gameObject.activeSelf) DiscEnd.gameObject.SetActive(true);
+
+        DrawingOverlay.rectTransform.localScale = new Vector3(
+            1 - (currentMoves / MaxMoves),
+            DrawingOverlay.rectTransform.localScale.y,
+            DrawingOverlay.rectTransform.localScale.z
+        );
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (Input.GetMouseButton(0) && !dog.GetComponent<Doggy>().IsMoving)
+            GameObject objectHit = hit.transform.gameObject;
+            if (objectHit.tag == "GridTile" && objectHit != null)
             {
-                if (DiscStart.gameObject.activeSelf == false)
-                    DiscStart.gameObject.SetActive(true);
-
-                if (DiscEnd.gameObject.activeSelf == false)
-                    DiscEnd.gameObject.SetActive(true);
-
-                //decrease the overlay when you draw on the screen
-                if (!dog.GetComponent<Doggy>().IsMoving)
-                    DrawingOverlay.rectTransform.localScale = new Vector3(1 - (currentMoves / MaxMoves), DrawingOverlay.rectTransform.localScale.y, DrawingOverlay.rectTransform.localScale.z);
-
-                RaycastHit hit;
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-
-                if (Physics.Raycast(ray, out hit))
-                {
-                    GameObject objectHit = hit.transform.gameObject;
-
-                    if (objectHit.tag == "GridTile" && objectHit != null)
-                    {
-                        if (objectHit != previousTileSelected)
-                        {
-                            if (TilePath.Contains(objectHit))
-                            {
-                                if (TilePath.IndexOf(objectHit) == (TilePath.IndexOf(previousTileSelected) - 1))
-                                {
-                                    Vector3 p = new Vector3(previousTileSelected.transform.position.x, previousTileSelected.transform.position.z, 0);
-                                    line.points.Remove(new PolylinePoint(p));
-
-                                    line.UpdateMesh(true);
-
-                                    previousTileSelected.GetComponent<GridTile>().selected = false;
-                                    TilePath.Remove(previousTileSelected);
-                                    previousTileSelected = objectHit;
-
-                                    DiscEnd.position = new Vector3(objectHit.transform.position.x, DiscEnd.position.y, objectHit.transform.position.z);
-
-                                    //make the sheep return from the direction they will go to default state
-                                    foreach (GameObject sheep in Game.Sheeps)
-                                    {
-                                        if (Vector3.Distance(objectHit.transform.position, sheep.transform.position) >= 1.42f
-                                            && sheep.GetComponent<Sheepy>().reorientedOnce
-                                            && sheep.GetComponent<Sheepy>().reorientedPathIndex > TilePath.Count)
-                                        {
-                                            sheep.GetComponent<Sheepy>().reorientedOnce = false;
-                                            sheep.GetComponent<Sheepy>().ResetRotation();
-                                        }
-                                    }
-
-                                    currentMoves--;
-
-                                    //make the dog turn on the first path tile
-                                    if (currentMoves == 1)
-                                    {
-                                        dog.GetComponent<Doggy>().ReorientRotation(objectHit.transform.position);
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                //FIRST MOVE/CLICK CONDITIONS
-                                if (TilePath.Count == 0)
-                                {
-                                    if (Vector3.Distance(dog.transform.position, objectHit.transform.position) < 1)
-                                    {
-                                        objectHit.GetComponent<GridTile>().selected = true;
-                                        TilePath.Add(objectHit);
-                                        previousTileSelected = objectHit;
-                                    }
-                                    else
-                                    {
-                                        if (showTutorial)
-                                            StartCoroutine(ShowTutorial());
-                                    }
-                                }
-                                else
-                                {
-                                    //REST OF THE MOVES AFTER YOU START A PATH
-                                    if (Vector3.Distance(objectHit.transform.position, previousTileSelected.transform.position) <= 1 && currentMoves < MaxMoves)
-                                    {
-                                        //check if there's any blocker between the last grid tile and the selected tile
-                                        foreach (GameObject blocker in Blockers)
-                                        {
-                                            if (Vector3.Distance(objectHit.transform.position, blocker.transform.position) <= 0.5f
-                                                && Vector3.Distance(previousTileSelected.transform.position, blocker.transform.position) <= 0.5f)
-                                            {
-                                                pathBlocked = true;
-                                            }
-                                        }
-
-                                        if (!pathBlocked)
-                                        {
-                                            objectHit.GetComponent<GridTile>().selected = true;
-                                            TilePath.Add(objectHit);
-                                            previousTileSelected = objectHit;
-
-                                            DiscEnd.position = new Vector3(objectHit.transform.position.x, DiscEnd.position.y, objectHit.transform.position.z);
-
-                                            Vector3 p = new Vector3(objectHit.transform.position.x, objectHit.transform.position.z, 0);
-                                            line.AddPoint(p);
-
-                                            //make the sheep turn into the direction they will go
-                                            foreach (GameObject sheep in Game.Sheeps)
-                                            {
-                                                if (Vector3.Distance(objectHit.transform.position, sheep.transform.position) <= 1.42f
-                                                    && !sheep.GetComponent<Sheepy>().reorientedOnce)
-                                                {
-                                                    sheep.GetComponent<Sheepy>().ReorientRotation(objectHit.transform.position, TilePath.Count);
-                                                    sheep.GetComponent<Sheepy>().reorientedOnce = true;
-                                                }
-                                            }
-
-                                            currentMoves++;
-
-                                            //make the dog turn on the first path tile
-                                            if (currentMoves == 1)
-                                            {
-                                                dog.GetComponent<Doggy>().ReorientRotation(objectHit.transform.position);
-                                            }
-                                        }
-                                        else
-                                        {
-                                            pathBlocked = false;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    else if (objectHit == null)
-                    {
-                        ClearTilePath();
-                    }
-                }
+                HandleTileSelection(objectHit);
             }
-
-            if (Input.GetMouseButtonUp(0))
+            else if (objectHit == null)
             {
-                if (TilePath.Count <= 0)
-                {
-                    ClearTilePath();
-                }
-                else if (TilePath.Count > 0)
-                {
-                    dog.GetComponent<Doggy>().StartMoving(TilePath);
-                    GridManager.startPuzzle = true;
-
-                    //make the sheep grid turn off when simulation starts
-                    foreach (GameObject sheep in Game.Sheeps)
-                    {
-                        sheep.GetComponent<Sheepy>().showGridObj = false;
-                    }
-
-                    DrawingOverlay.rectTransform.localScale = new Vector3(0, DrawingOverlay.rectTransform.localScale.y, DrawingOverlay.rectTransform.localScale.z);
-
-                    if (TilePath.Count > 0)
-                        RecordDistance = MaxMoves;
-                }
-            }
-
-            if (Input.GetMouseButtonUp(1))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                ClearTilePath();
             }
         }
     }
+
+    void HandleMouseRelease()
+    {
+        if (TilePath.Count <= 0)
+        {
+            ClearTilePath();
+        }
+        else
+        {
+            dog.GetComponent<Doggy>().StartMoving(TilePath);
+            startPuzzle = true;
+
+            foreach (GameObject sheep in Game.Sheeps)
+                sheep.GetComponent<Sheepy>().showGridObj = false;
+
+            DrawingOverlay.rectTransform.localScale = new Vector3(
+                0,
+                DrawingOverlay.rectTransform.localScale.y,
+                DrawingOverlay.rectTransform.localScale.z
+            );
+
+            RecordDistance = MaxMoves;
+        }
+    }
+
+    // ====================
+    // == Tile Selection ==
+    // ====================
+
+    void HandleTileSelection(GameObject objectHit)
+    {
+        if (objectHit == previousTileSelected) return;
+
+        if (TilePath.Contains(objectHit))
+        {
+            int hitIndex = TilePath.IndexOf(objectHit);
+            int prevIndex = TilePath.IndexOf(previousTileSelected);
+
+            if (hitIndex == (prevIndex - 1))
+            {
+                Vector3 p = new Vector3(previousTileSelected.transform.position.x, previousTileSelected.transform.position.z, 0);
+                line.points.Remove(new PolylinePoint(p));
+                line.UpdateMesh(true);
+
+                previousTileSelected.GetComponent<GridTile>().selected = false;
+                TilePath.Remove(previousTileSelected);
+                previousTileSelected = objectHit;
+
+                DiscEnd.position = new Vector3(objectHit.transform.position.x, DiscEnd.position.y, objectHit.transform.position.z);
+
+                foreach (GameObject sheep in Game.Sheeps)
+                {
+                    var sheepComp = sheep.GetComponent<Sheepy>();
+                    if (Vector3.Distance(objectHit.transform.position, sheep.transform.position) >= 1.42f
+                        && sheepComp.reorientedOnce
+                        && sheepComp.reorientedPathIndex > TilePath.Count)
+                    {
+                        sheepComp.reorientedOnce = false;
+                        sheepComp.ResetRotation();
+                    }
+                }
+
+                currentMoves--;
+
+                if (currentMoves == 1)
+                    dog.GetComponent<Doggy>().ReorientRotation(objectHit.transform.position);
+            }
+        }
+        else
+        {
+            if (TilePath.Count == 0)
+            {
+                if (Vector3.Distance(dog.transform.position, objectHit.transform.position) < 1)
+                {
+                    objectHit.GetComponent<GridTile>().selected = true;
+                    TilePath.Add(objectHit);
+                    previousTileSelected = objectHit;
+                }
+                else if (showTutorial)
+                {
+                    StartCoroutine(ShowTutorial());
+                }
+            }
+            else
+            {
+                if (Vector3.Distance(objectHit.transform.position, previousTileSelected.transform.position) <= 1 && currentMoves < MaxMoves)
+                {
+                    pathBlocked = false;
+
+                    foreach (GameObject blocker in Blockers)
+                    {
+                        if (Vector3.Distance(objectHit.transform.position, blocker.transform.position) <= 0.5f &&
+                            Vector3.Distance(previousTileSelected.transform.position, blocker.transform.position) <= 0.5f)
+                        {
+                            pathBlocked = true;
+                        }
+                    }
+
+                    if (!pathBlocked)
+                    {
+                        objectHit.GetComponent<GridTile>().selected = true;
+                        TilePath.Add(objectHit);
+                        previousTileSelected = objectHit;
+
+                        DiscEnd.position = new Vector3(objectHit.transform.position.x, DiscEnd.position.y, objectHit.transform.position.z);
+
+                        Vector3 p = new Vector3(objectHit.transform.position.x, objectHit.transform.position.z, 0);
+                        line.AddPoint(p);
+
+                        foreach (GameObject sheep in Game.Sheeps)
+                        {
+                            var sheepComp = sheep.GetComponent<Sheepy>();
+                            if (Vector3.Distance(objectHit.transform.position, sheep.transform.position) <= 1.42f && !sheepComp.reorientedOnce)
+                            {
+                                sheepComp.ReorientRotation(objectHit.transform.position, TilePath.Count);
+                                sheepComp.reorientedOnce = true;
+                            }
+                        }
+
+                        currentMoves++;
+
+                        if (currentMoves == 1)
+                            dog.GetComponent<Doggy>().ReorientRotation(objectHit.transform.position);
+                    }
+                    else
+                    {
+                        pathBlocked = false;
+                    }
+                }
+            }
+        }
+    }
+
+    // ===================
+    // == Grid & Helpers ==
+    // ===================
 
     IEnumerator ShowTutorial()
     {
@@ -288,16 +287,13 @@ public class GridManager : MonoBehaviour
 
     void ClearTilePath()
     {
-        foreach (GameObject tileobj in TilePath)
-        {
-            tileobj.GetComponent<GridTile>().selected = false;
-        }
-        previousTileSelected = null;
-        TilePath.Clear();
+        foreach (GameObject tile in TilePath)
+            tile.GetComponent<GridTile>().selected = false;
 
+        TilePath.Clear();
+        previousTileSelected = null;
         line.points.Clear();
 
-        //Add line first point
         Vector3 p = new Vector3(dog.transform.position.x, dog.transform.position.z, 0);
         line.AddPoint(p);
     }
@@ -318,36 +314,33 @@ public class GridManager : MonoBehaviour
     {
         List<Vector3Int> gridPoints = new List<Vector3Int>();
         Blockers = GameObject.FindGameObjectsWithTag("BLOCKER");
-        int sizeH = size.x;
-        int sizeV = size.y;
 
-        for (int i = -sizeH; i <= sizeH; i++)
+        for (int i = -size.x; i <= size.x; i++)
         {
-            for (int k = -sizeV; k <= sizeV; k++)
+            for (int k = -size.y; k <= size.y; k++)
             {
                 Vector3Int gridPoint = new Vector3Int(pos.x + i, pos.y, pos.z + k);
 
-                if (Mathf.Abs(gridPoint.x) <= sizeH && Mathf.Abs(gridPoint.z) <= sizeV)
+                if (Mathf.Abs(gridPoint.x) <= size.x && Mathf.Abs(gridPoint.z) <= size.y)
                 {
                     gridPoint += new Vector3Int(GridOffset.x, 0, GridOffset.y);
-
-                    bool BlockerInsideGridPoint = false;
+                    bool blocked = false;
 
                     foreach (GameObject blocker in Blockers)
                     {
                         if (blocker.transform.position == gridPoint)
                         {
-                            BlockerInsideGridPoint = true;
+                            blocked = true;
+                            break;
                         }
                     }
 
-                    if (!BlockerInsideGridPoint)
-                    {
+                    if (!blocked)
                         gridPoints.Add(gridPoint);
-                    }
                 }
             }
         }
+
         return gridPoints;
     }
 

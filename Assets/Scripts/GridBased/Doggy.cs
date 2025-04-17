@@ -5,35 +5,44 @@ using UnityEngine.UIElements;
 
 public class Doggy : MonoBehaviour
 {
+    // Components
     private AudioSource sfx;
     private Animator dogAnimator;
+
+    // Movement settings
     private float speed;
     private int currentPathIndex = 0;
     private List<GameObject> pathTiles;
     private bool isMoving = false;
+    private bool hasFinishedPath = false;
 
+    // Properties
     public bool IsMoving { get { return isMoving; } }
+    public bool HasFinishedPath => hasFinishedPath;
+
+    // Called on initialization
     void Awake()
     {
-        //round positions to the nearest int to avoid weird behaviour
-        transform.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), Mathf.RoundToInt(transform.position.z));
+        // Round position to avoid floating point issues on grid
+        transform.position = new Vector3(
+            Mathf.RoundToInt(transform.position.x),
+            Mathf.RoundToInt(transform.position.y),
+            Mathf.RoundToInt(transform.position.z)
+        );
 
+        // Setup references
         sfx = GetComponent<AudioSource>();
         dogAnimator = transform.GetChild(0).GetComponent<Animator>();
+
+        // Rename instance for easier debug 
         this.name = this.name + "  " + this.transform.position.ToString();
 
+        // Randomize initial rotation and set movement speed
         RandomizeRotation();
         speed = Game.AnimalSpeed;
     }
 
-    public void StartMoving(List<GameObject> path)
-    {
-        pathTiles = path;
-        currentPathIndex = 0;
-        isMoving = true;
-        dogAnimator.SetBool("isMoving", true);
-    }
-
+    // Called every frame
     void Update()
     {
         if (isMoving)
@@ -42,23 +51,35 @@ public class Doggy : MonoBehaviour
         }
     }
 
+    // Starts the movement along the given path
+    public void StartMoving(List<GameObject> path)
+    {
+        if (hasFinishedPath) return; // Prevent re-triggering movement
+
+        pathTiles = path;
+        currentPathIndex = 0;
+        isMoving = true;
+        dogAnimator.SetBool("isMoving", true);
+    }
+
+    // Handles movement along the current path
     private void MoveAlongPath()
     {
         if (currentPathIndex < pathTiles.Count)
         {
-            // Calculate direction and move
             Vector3 targetPosition = pathTiles[currentPathIndex].transform.position;
 
-            // Move the dog
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+            // Move towards the current target tile
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                targetPosition,
+                Time.deltaTime * speed
+            );
 
-            //Calculate direction CORRECTLY for animation
+            // Rotate dog in movement direction (for animation)
             Vector3 directionToTarget = (targetPosition - transform.position).normalized;
-
-            // Only rotate if actually moving (direction isn't zero)
             if (directionToTarget != Vector3.zero)
             {
-                //Use the direction directly without inverting
                 transform.rotation = Quaternion.Lerp(
                     transform.rotation,
                     Quaternion.LookRotation(directionToTarget),
@@ -66,7 +87,7 @@ public class Doggy : MonoBehaviour
                 );
             }
 
-            // Check if reached current waypoint
+            // Check if tile reached
             if (transform.position == targetPosition)
             {
                 if (CanContinueMoving())
@@ -85,12 +106,13 @@ public class Doggy : MonoBehaviour
         }
     }
 
+    // Checks if the dog can continue moving to the next tile (handles sheep logic)
     private bool CanContinueMoving()
     {
         if (currentPathIndex < pathTiles.Count - 1)
         {
-            RaycastHit hit;
             Vector3 nextTilePosition = pathTiles[currentPathIndex + 1].transform.position;
+            RaycastHit hit;
 
             if (Physics.Raycast(nextTilePosition, Vector3.up, out hit, 1.5f))
             {
@@ -109,13 +131,17 @@ public class Doggy : MonoBehaviour
         return true;
     }
 
+    // Stops movement and marks path as completed
     private void StopMoving()
     {
         isMoving = false;
+        hasFinishedPath = true;
+
         dogAnimator.SetBool("isMoving", false);
         Game.PathComplete = true;
     }
 
+    // Plays a random dog bark and triggers particle effect
     public void Bark()
     {
         if (!sfx.isPlaying)
@@ -128,14 +154,24 @@ public class Doggy : MonoBehaviour
         }
     }
 
+    // Randomizes the dog's initial Y-axis rotation
     public void RandomizeRotation()
     {
-        transform.eulerAngles = new Vector3(transform.rotation.x, Random.Range(0, 360), transform.rotation.z);
+        transform.eulerAngles = new Vector3(
+            transform.rotation.x,
+            Random.Range(0, 360),
+            transform.rotation.z
+        );
     }
 
+    // Smoothly reorients the dog to face a target position
     public void ReorientRotation(Vector3 position)
     {
         Vector3 direction = Vector3.Normalize(position - transform.position);
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), 5000 * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(
+            transform.rotation,
+            Quaternion.LookRotation(direction),
+            5000 * Time.deltaTime
+        );
     }
 }
