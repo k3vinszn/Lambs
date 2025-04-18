@@ -5,22 +5,26 @@ using UnityEngine.UIElements;
 
 public class Doggy : MonoBehaviour
 {
-    // Components
+    // ====================================
+    // == COMPONENT REFERENCES & SETTINGS ==
+    // ====================================
     private AudioSource sfx;
     private Animator dogAnimator;
-
-    // Movement settings
     private float speed;
     private int currentPathIndex = 0;
     private List<GameObject> pathTiles;
     private bool isMoving = false;
     private bool hasFinishedPath = false;
 
-    // Properties
+    // =====================
+    // == PUBLIC PROPERTIES ==
+    // =====================
     public bool IsMoving { get { return isMoving; } }
     public bool HasFinishedPath => hasFinishedPath;
 
-    // Called on initialization
+    // =====================
+    // == INITIALIZATION ==
+    // =====================
     void Awake()
     {
         // Round position to avoid floating point issues on grid
@@ -42,7 +46,9 @@ public class Doggy : MonoBehaviour
         speed = Game.AnimalSpeed;
     }
 
-    // Called every frame
+    // =================
+    // == MAIN UPDATE ==
+    // =================
     void Update()
     {
         if (isMoving)
@@ -51,6 +57,9 @@ public class Doggy : MonoBehaviour
         }
     }
 
+    // ======================
+    // == MOVEMENT CONTROL ==
+    // ======================
     // Starts the movement along the given path
     public void StartMoving(List<GameObject> path)
     {
@@ -106,6 +115,9 @@ public class Doggy : MonoBehaviour
         }
     }
 
+    // ========================
+    // == MOVEMENT COLLISION ==
+    // ========================
     // Checks if the dog can continue moving to the next tile (handles sheep logic)
     private bool CanContinueMoving()
     {
@@ -141,6 +153,9 @@ public class Doggy : MonoBehaviour
         Game.PathComplete = true;
     }
 
+    // =================
+    // == AUDIO/SOUNDS ==
+    // =================
     // Plays a random dog bark and triggers particle effect
     public void Bark()
     {
@@ -154,6 +169,9 @@ public class Doggy : MonoBehaviour
         }
     }
 
+    // =====================
+    // == ROTATION METHODS ==
+    // =====================
     // Randomizes the dog's initial Y-axis rotation
     public void RandomizeRotation()
     {
