@@ -136,27 +136,41 @@ public class GridManager : MonoBehaviour
         }
     }
 
-    void HandleMouseRelease()
+    public void OnGoButtonPressed()
     {
-        if (TilePath.Count <= 0)
-        {
-            ClearTilePath();
-        }
-        else
+        if (TilePath.Count > 0 && !dog.GetComponent<Doggy>().IsMoving)
         {
             dog.GetComponent<Doggy>().StartMoving(TilePath);
             startPuzzle = true;
 
             foreach (GameObject sheep in Game.Sheeps)
                 sheep.GetComponent<Sheepy>().showGridObj = false;
+        }
+    }
 
-            DrawingOverlay.rectTransform.localScale = new Vector3(
-                0,
-                DrawingOverlay.rectTransform.localScale.y,
-                DrawingOverlay.rectTransform.localScale.z
-            );
+    void HandleMouseRelease()
+    {
+        if (TilePath.Count <= 0)
+        {
+            ClearTilePath();
+        }
 
-            RecordDistance = MaxMoves;
+        DrawingOverlay.rectTransform.localScale = new Vector3(
+            0,
+            DrawingOverlay.rectTransform.localScale.y,
+            DrawingOverlay.rectTransform.localScale.z
+        );
+    }
+
+    public void ExecutePath()
+    {
+        if (TilePath.Count > 0 && !dog.GetComponent<Doggy>().IsMoving)
+        {
+            dog.GetComponent<Doggy>().StartMoving(TilePath);
+            startPuzzle = true;
+
+            foreach (GameObject sheep in Game.Sheeps)
+                sheep.GetComponent<Sheepy>().showGridObj = false;
         }
     }
 

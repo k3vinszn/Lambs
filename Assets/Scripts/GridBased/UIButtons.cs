@@ -3,11 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Tilemaps;
 //using UnityEngine.UIElements;
 
 	public class UIButtons : MonoBehaviour {
 
-	public void Restart()
+
+    // Reference to GridManager
+    private GridManager gridManager;
+
+    void Start()
+    {
+        // Find the GridManager in the scene
+        gridManager = FindObjectOfType<GridManager>();
+    }
+
+
+    public void ExecutePath()
+    {
+        if (gridManager != null)
+        {
+            gridManager.OnGoButtonPressed();
+        }
+        else
+        {
+            Debug.LogError("GridManager not found in scene!");
+        }
+    }
+
+    public void Restart()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
@@ -47,5 +71,9 @@ using UnityEngine.UI;
     {
         SceneManager.LoadScene(0);
     }
+
+
+
+    
 
 }
