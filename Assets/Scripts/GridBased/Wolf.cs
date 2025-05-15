@@ -15,8 +15,17 @@ public class Wolf : MonoBehaviour {
     public float distanceToTarget;
 
     public GameObject closestSheep;
+   
+    // MY CHANGES
 
-    public float FleeRadius = 1.1f;
+    public float ChaseRadius = 1.4f;
+
+    public float FleeDistance = 1.4f;
+
+    public float DogDetectionRadius = 1.1f;
+
+    // MY CHANGES
+
     private int currentIndex = 0;
     private float speed;
 
@@ -49,6 +58,8 @@ public class Wolf : MonoBehaviour {
     private GridManager gridManager;
     public Vector2 GridSize;
     public Vector2 GridOffset;
+
+  
 
     void Awake()
     {
@@ -90,9 +101,15 @@ public class Wolf : MonoBehaviour {
         {
             distanceToTarget = Vector3.Distance(transform.position, AfraidOfTarget.transform.position);
 
+            if (Vector3.Distance(transform.position, AfraidOfTarget.transform.position) > FleeDistance)
+            {
+                StopMoving();
+                return;
+            }
+
             if (wolfState == State.Idle)
             {
-                if (distanceToTarget < FleeRadius)
+                if (distanceToTarget < DogDetectionRadius)
                 {
                     UpdateFleeDirection();
 
@@ -105,8 +122,14 @@ public class Wolf : MonoBehaviour {
                 }
                 else
                 {
-                    wolfState = State.Moving;
-                    Howl();
+                    UpdateTargetToChase();
+
+                    if (closestSheep != null)
+                    {
+                        UpdatePathfinderTarget();
+                        wolfState = State.Moving;
+                        Howl();
+                    }
                 }
             }
 
@@ -194,9 +217,20 @@ public class Wolf : MonoBehaviour {
 
     public void UpdateTargetToChase()
     {
-        closestSheep = GetClosestTarget(Game.Sheeps);
-        currentIndex = 0;
+        GameObject target = GetClosestTarget(Game.Sheeps);
+
+        if (target != null && Vector3.Distance(transform.position, target.transform.position) <= ChaseRadius)
+        {
+            closestSheep = target;
+            currentIndex = 0;
+        }
+        else
+        {
+            closestSheep = null;
+            wolfState = State.Idle;
+        }
     }
+
     public void UpdatePathfinderTarget()
     {
         if (closestSheep != null && !closestSheep.GetComponent<Sheepy>().ExitedGrid && !ExitedGrid)
@@ -219,7 +253,7 @@ public void UpdateFleeDirection()
 
             //Debug.Log("Im going on a diagonal!");
 
-            FleeDirection = new Vector3(FleeDirection.x * 1.4142f, 0, FleeDirection.z * 1.4142f);
+            FleeDirection = new Vector3(FleeDirection.x * FleeDistance, 0, FleeDirection.z * FleeDistance);
             //speed = speed * 1.4142f;
         }
     }
