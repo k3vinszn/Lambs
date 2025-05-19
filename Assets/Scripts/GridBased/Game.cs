@@ -137,8 +137,27 @@ using UnityEngine.UI;
                 }
             }
 
+            int starsEarned = 0;
+
+            if (Score >= OneStarScore) starsEarned = 1;
+            if (Score >= TwoStarScore) starsEarned = 2;
+            if (Score >= ThreeStarScore) starsEarned = 3;
+
+            // Save stars using level build index as unique key
+            string levelKey = "Level_" + SceneManager.GetActiveScene().buildIndex + "_Stars";
+            int savedStars = PlayerPrefs.GetInt(levelKey, 0);
+
+            // Only update if the player did better than before
+            if (starsEarned > savedStars)
+            {
+                PlayerPrefs.SetInt(levelKey, starsEarned);
+                PlayerPrefs.Save();
+            }
+
+            // Show stars in the UI
             StartCoroutine(StarCheck());
             LaunchScorePanel();
+
 
             //Show and update the score UI 
             ScoreFinal.text = Score.ToString() + " of " + MaxGoal;
@@ -192,7 +211,8 @@ using UnityEngine.UI;
 
 	IEnumerator StarCheck ()
 	{
-		yield return new WaitForSeconds (0.5f);
+
+        yield return new WaitForSeconds (0.5f);
 		if (Score >= OneStarScore)
 		{
 			OneStar.isOn = true;
@@ -209,6 +229,8 @@ using UnityEngine.UI;
 				}
 			}
 		}
+
+
 
 	}
 
