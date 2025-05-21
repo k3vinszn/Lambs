@@ -20,7 +20,7 @@ public class Wolf : MonoBehaviour {
 
     public float ChaseRadius = 1.4f;
 
-    public float FleeDistance = 1.4f;
+    public float FleeDistance = 2.8f;
 
     public float DogDetectionRadius = 1.1f;
 
