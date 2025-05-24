@@ -23,6 +23,7 @@ public class Wolf : MonoBehaviour {
     public float FleeDistance = 2.8f;
 
     public float DogDetectionRadius = 1.1f;
+    public Vector3 FleeDirection = Vector3.zero;
 
     // MY CHANGES
 
@@ -36,7 +37,6 @@ public class Wolf : MonoBehaviour {
     public bool ExitedGrid = false;
 
     public Vector3 nextDestination = Vector3.zero;
-    public Vector3 FleeDirection = Vector3.zero;
     public Vector3 GoalDirection = Vector3.zero;
 
     public bool DrawGizmos = false;
@@ -73,11 +73,11 @@ public class Wolf : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         sfx = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+        ReachedGoal = false;
+        nextDestination = transform.position;
 
         AfraidOfTarget = GameObject.FindGameObjectWithTag("Player");
 
-        ReachedGoal = false;
-        nextDestination = transform.position;
     }
 
     void Start()
@@ -86,8 +86,6 @@ public class Wolf : MonoBehaviour {
         this.name = this.name + "  " + this.transform.position.ToString();
 
         PathFinder = GetComponent<PathFinding>();
-        AfraidOfTarget = GameObject.FindGameObjectWithTag("Player");
-
         UpdateTargetToChase();
         UpdatePathfinderTarget();
     }
@@ -101,11 +99,11 @@ public class Wolf : MonoBehaviour {
         {
             distanceToTarget = Vector3.Distance(transform.position, AfraidOfTarget.transform.position);
 
-            if (Vector3.Distance(transform.position, AfraidOfTarget.transform.position) > FleeDistance)
-            {
-                StopMoving();
-                return;
-            }
+           // if (Vector3.Distance(transform.position, AfraidOfTarget.transform.position) > FleeDistance)
+            //{
+                //StopMoving();
+           //     return;
+           // }
 
             if (wolfState == State.Idle)
             {
@@ -114,6 +112,7 @@ public class Wolf : MonoBehaviour {
                     UpdateFleeDirection();
 
                     if (CheckIfCanKeepMoving(FleeDirection))
+                        Debug.Log("Can Keep moving");
                     {
                         AfraidOfTarget.GetComponent<Doggy>().Bark();
                         StartMoving(FleeDirection);
@@ -176,6 +175,7 @@ public class Wolf : MonoBehaviour {
 
             if (wolfState == State.Fleeing)
             {
+                
                 //if we move out of a goal position do this
                 if (ReachedGoal)
                 {
@@ -190,23 +190,16 @@ public class Wolf : MonoBehaviour {
 
                 if (Vector3.Distance(transform.position, nextDestination) >= Mathf.Epsilon)
                 {
-
+                    Debug.Log("CheckPoint1");
                     //FLEE FROM WHATS MAKING ME MOVE
                     transform.position = Vector3.MoveTowards(transform.position, nextDestination, speed * Time.deltaTime);
                     transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(FleeDirection), 10 * Time.deltaTime);
+                    GetNextDestination(FleeDirection);
                 }
                 else
                 {
-                    //check if it can continue moving or else stop
-                    if (CheckIfCanKeepMoving(FleeDirection))
-                    {
-                        //Debug.Log(name + " kept going");
-                        GetNextDestination(FleeDirection);
-                    }
-                    else
-                    {
-                        StopMoving();
-                    }
+                    Debug.Log("CheckPoint2");
+                   
                 }
 
             }
@@ -239,22 +232,16 @@ public class Wolf : MonoBehaviour {
         }
     }
 
-public void UpdateFleeDirection()
+    public void UpdateFleeDirection()
     {
-        //Debug.Log("updated " + name + " flee direction!");
-        FleeDirection = Vector3.Normalize(transform.position - AfraidOfTarget.transform.position);
+        Vector3 DogAbsTransformPos = new Vector3(Mathf.RoundToInt(AfraidOfTarget.transform.position.x), Mathf.RoundToInt(AfraidOfTarget.transform.position.y), Mathf.RoundToInt(AfraidOfTarget.transform.position.z));
 
-        //to compensate nextDestination and speed when going in diagonals, should be slightly modified to cover the correct distance
+        FleeDirection = Vector3.Normalize(transform.position - DogAbsTransformPos);
+
+        // Adjust for diagonal movement
         if (FleeDirection.x != 0 && FleeDirection.z != 0)
         {
-            //float myhypotenuse = Mathf.Sqrt(FleeDirection.x * FleeDirection.x + FleeDirection.z * FleeDirection.z);
-            //FOR SOME REASON THIS FORMULA ABOVE ISNT GIVING OUT A PROPER RESULT, LETS SCRAP IT
-            //"1.4142f" is a basic hipotenuse ratio of a 1x1 triangle which is the only thing we need for a grid unit system
-
-            //Debug.Log("Im going on a diagonal!");
-
-            FleeDirection = new Vector3(FleeDirection.x * FleeDistance, 0, FleeDirection.z * FleeDistance);
-            //speed = speed * 1.4142f;
+            FleeDirection = new Vector3(FleeDirection.x * 1.4142f, 0, FleeDirection.z * 1.4142f);
         }
     }
 

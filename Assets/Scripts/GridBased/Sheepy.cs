@@ -267,9 +267,7 @@ public class Sheepy : MonoBehaviour
     // Calculate flee direction away from the target (dog)
     public void UpdateFleeDirection()
     {
-        Vector3 DogAbsTransformPos = new Vector3(Mathf.RoundToInt(AfraidOfTarget.transform.position.x),
-                                             Mathf.RoundToInt(AfraidOfTarget.transform.position.y),
-                                             Mathf.RoundToInt(AfraidOfTarget.transform.position.z));
+        Vector3 DogAbsTransformPos = new Vector3 (Mathf.RoundToInt(AfraidOfTarget.transform.position.x), Mathf.RoundToInt (AfraidOfTarget.transform.position.y) , Mathf.RoundToInt(AfraidOfTarget.transform.position.z));
 
         FleeDirection = Vector3.Normalize(transform.position - DogAbsTransformPos);
 
