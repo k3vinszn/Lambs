@@ -39,7 +39,7 @@ public class GridTile : MonoBehaviour
     // == TILE STATE FLAGS ==
     // =======================
     public bool MouseOver = false;
-    public bool selected = false;
+    public bool selected = false; // still here in case you use it elsewhere
 
     // ========================
     // == SPRITE UV OFFSETS ==
@@ -106,8 +106,8 @@ public class GridTile : MonoBehaviour
     {
         if (!Game.ActiveLogic) return;
 
-        gridTexture.SetActive(Input.GetMouseButton(0) && !GridManager.startPuzzle);
-        m_Renderer.material.color = selected ? MouseOverColor : OriginalColor;
+        // Change color only when mouse is hovering
+        m_Renderer.material.color = MouseOver ? MouseOverColor : OriginalColor;
     }
 
     // ===========================

@@ -23,7 +23,6 @@ using UnityEngine.Tilemaps;
     {
         if (gridManager != null)
         {
-            gridManager.OnGoButtonPressed();
         }
         else
         {
