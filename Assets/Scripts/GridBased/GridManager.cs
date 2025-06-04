@@ -8,9 +8,7 @@ using Steer2D;
 
 public class GridManager : MonoBehaviour
 {
-    // ====================================
-    // == COMPONENT REFERENCES & SETTINGS ==
-    // ====================================
+    // === Grid Config ===
     public float MaxMoves;
     public Vector2Int GridSize;
     public Vector2Int GridOffset;
@@ -26,46 +24,25 @@ public class GridManager : MonoBehaviour
     private GameObject Tile;
     private GameObject[] Blockers;
 
-    // =====================
-    // == UI REFERENCES ==
-    // =====================
+    // === UI ===
     public Text MovesLeftVariableObj;
     public UnityEngine.UI.Image MovesLeftImageObj;
     public UnityEngine.UI.Image DrawingOverlay;
     public GameObject[] SheepsUI;
     public GameObject LineDrawing;
 
-    // =====================
-    // == PLAYER & PATHING ==
-    // =====================
+    // === Player and Pathing ===
     public GameObject dog;
     private float currentMoves;
     private Camera cam;
     private Polyline line;
-    private GameObject currentTileForInput;
 
-    // =========================
-    // == DOG START POSITION  ==
-    // =========================
-    private Vector3 dogStartPosition;
-
-    // =====================
-    // == GAME STATE FLAGS ==
-    // =====================
+    // === Flags ===
     public bool showTutorial = false;
     public static bool startPuzzle = false;
 
-    // =====================
-    // == SHEEP ROTATION STATE ==
-    // =====================
-    private readonly HashSet<Sheepy> rotatedSheep = new HashSet<Sheepy>();
-
-    // =====================
-    // == INITIALIZATION ==
-    // =====================
     void Awake()
     {
-        // Get references to core components
         cam = Camera.main;
         SheepsUI = GameObject.FindGameObjectsWithTag("SheepDisc");
         Blockers = GameObject.FindGameObjectsWithTag("BLOCKER");
@@ -73,112 +50,41 @@ public class GridManager : MonoBehaviour
         line = LineDrawing.GetComponent<Polyline>();
         DrawingOverlay = GameObject.FindGameObjectWithTag("DrawingOverlay").GetComponent<UnityEngine.UI.Image>();
         Tile = Resources.Load("GridTile") as GameObject;
-        dog = GameObject.FindGameObjectWithTag("Player");
 
-        // NEW — remember where the dog begins (rounded to whole grid units)
-        dogStartPosition = new Vector3(
-            Mathf.RoundToInt(dog.transform.position.x),
-            Mathf.RoundToInt(dog.transform.position.y),
-            Mathf.RoundToInt(dog.transform.position.z));
-        
-        // Initialize game state
-                startPuzzle = false;
+        startPuzzle = false;
         GenerateGrid();
         ClearTilePath();
     }
 
-    // =================
-    // == MAIN UPDATE ==
-    // =================
     void Update()
     {
-        // Skip input processing if dog is moving
         if (dog.GetComponent<Doggy>().IsMoving)
             return;
 
-        // Update moves UI display
+        // Update moves UI
         UpdateMovesUI();
 
-        // Only process input when game logic is active
         if (!Game.ActiveLogic)
             return;
 
-        // Handle mouse input
         if (Input.GetMouseButtonUp(0))
             HandleTileClick();
 
-        // Right click resets the level
         if (Input.GetMouseButtonUp(1))
             ResetLevel();
-
-        // Handle keyboard input for path creation
-        HandleKeyboardInput();
     }
 
-    // =====================
-    // == UI MANAGEMENT ==
-    // =====================
     void UpdateMovesUI()
     {
         int movesLeft = (int)(MaxMoves - currentMoves);
         MovesLeftVariableObj.text = movesLeft.ToString();
         MovesLeftImageObj.color = (movesLeft > 0)
-            ? new Color(1, 0.784f, 0.196f, 1)  // Yellow when moves available
-            : new Color(1, 0.294f, 0.392f, 1); // Red when no moves left
-    }
-
-    // =====================
-    // == INPUT HANDLING ==
-    // =====================
-    void HandleKeyboardInput()
-    {
-        // WASD keys for directional path building
-        if (Input.GetKeyDown(KeyCode.W)) TryAddTileInDirection(Vector2Int.up);
-        if (Input.GetKeyDown(KeyCode.S)) TryAddTileInDirection(Vector2Int.down);
-        if (Input.GetKeyDown(KeyCode.A)) TryAddTileInDirection(Vector2Int.left);
-        if (Input.GetKeyDown(KeyCode.D)) TryAddTileInDirection(Vector2Int.right);
-    }
-
-    void TryAddTileInDirection(Vector2Int direction)
-    {
-        if (currentTileForInput == null) return;
-
-        // Calculate current and target positions
-        Vector2Int currentPos = new Vector2Int(
-            Mathf.RoundToInt(currentTileForInput.transform.position.x),
-            Mathf.RoundToInt(currentTileForInput.transform.position.z)
-        );
-
-        Vector2Int nextPos = currentPos + direction;
-        GameObject nextTile = GetTileAtPosition(nextPos);
-
-        // Process tile if valid
-        if (nextTile != null)
-        {
-            ProcessTileSelection(nextTile);
-            if (TilePath.Contains(nextTile))
-                currentTileForInput = nextTile;
-        }
-    }
-
-    GameObject GetTileAtPosition(Vector2Int pos)
-    {
-        // Find tile at specified grid position
-        foreach (GameObject tile in Tiles)
-        {
-            Vector2Int tilePos = new Vector2Int(
-                Mathf.RoundToInt(tile.transform.position.x),
-                Mathf.RoundToInt(tile.transform.position.z)
-            );
-            if (tilePos == pos)
-                return tile;
-        }
-        return null;
+            ? new Color(1, 0.784f, 0.196f, 1)
+            : new Color(1, 0.294f, 0.392f, 1);
     }
 
     void HandleTileClick()
     {
-        // Raycast to detect tile clicks
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
@@ -189,24 +95,35 @@ public class GridManager : MonoBehaviour
         }
     }
 
-    // =====================
-    // == PATH MANAGEMENT ==
-    // =====================
     void ProcessTileSelection(GameObject tile)
     {
-        // Prevent selecting the tile the dog starts on
-        if (Vector3.Distance(tile.transform.position, dogStartPosition) < 0.01f)
-            return;
-
-        // Ignore clicks on tiles already in the path
+        // If tile is in path, handle removal
         if (TilePath.Contains(tile))
+        {
+            HandlePathTileClick(tile);
             return;
+        }
 
-        // Only add tiles if moves are available
+        // Otherwise handle adding new tile
         if (currentMoves < MaxMoves)
         {
             TryAddTileToPath(tile);
         }
+    }
+
+    void HandlePathTileClick(GameObject tile)
+    {
+        int index = TilePath.IndexOf(tile);
+
+        // If clicking last tile, just remove it
+        if (index == TilePath.Count - 1)
+        {
+            RemoveLastTile();
+            return;
+        }
+
+        // Otherwise remove this tile and all after it
+        RemoveTilesFromIndex(index);
     }
 
     void TryAddTileToPath(GameObject tile)
@@ -251,9 +168,10 @@ public class GridManager : MonoBehaviour
         return (Mathf.Abs(delta.x) == 1 && delta.y == 0) || (delta.x == 0 && Mathf.Abs(delta.y) == 1);
     }
 
+
+
     bool IsPathBlocked(GameObject fromTile, GameObject toTile)
     {
-        // Check if path between tiles is blocked
         foreach (GameObject blocker in Blockers)
         {
             if (Vector3.Distance(toTile.transform.position, blocker.transform.position) <= 0.5f &&
@@ -267,43 +185,56 @@ public class GridManager : MonoBehaviour
 
     void AddTileToPath(GameObject tile)
     {
-        // Mark tile as selected and add to path
         tile.GetComponent<GridTile>().selected = true;
         TilePath.Add(tile);
 
-        // Update line renderer
+        // Add to line renderer
         line.AddPoint(new Vector3(tile.transform.position.x, tile.transform.position.z, 0));
 
         currentMoves++;
         UpdateSheepRotations(tile);
     }
 
+    void RemoveLastTile()
+    {
+        if (TilePath.Count == 0) return;
+
+        GameObject lastTile = TilePath[^1];
+        lastTile.GetComponent<GridTile>().selected = false;
+        TilePath.RemoveAt(TilePath.Count - 1);
+
+        line.points.RemoveAt(line.points.Count - 1);
+        line.UpdateMesh(true);
+
+        currentMoves--;
+    }
+
+    void RemoveTilesFromIndex(int index)
+    {
+        for (int i = TilePath.Count - 1; i >= index; i--)
+        {
+            TilePath[i].GetComponent<GridTile>().selected = false;
+            TilePath.RemoveAt(i);
+            line.points.RemoveAt(i + 1); // +1 for dog's starting point
+        }
+        line.UpdateMesh(true);
+        currentMoves = TilePath.Count;
+    }
+
     void UpdateSheepRotations(GameObject tile)
     {
-        // Rotate sheep that are near the newly added tile
         foreach (GameObject sheep in Game.Sheeps)
         {
             var sheepComp = sheep.GetComponent<Sheepy>();
-
-            // Skip if already rotated this sheep
-            if (rotatedSheep.Contains(sheepComp))
-                continue;
-
-            // Rotate if close enough to new tile
             if (Vector3.Distance(tile.transform.position, sheep.transform.position) <= 1.42f)
             {
                 sheepComp.ReorientRotation(tile.transform.position, TilePath.Count);
-                rotatedSheep.Add(sheepComp);
             }
         }
     }
 
-    // =====================
-    // == GAME ACTIONS ==
-    // =====================
     public void OnGoButtonPressed()
     {
-        // Start dog movement if path exists and dog isn't already moving
         if (TilePath.Count > 0 && !dog.GetComponent<Doggy>().IsMoving)
         {
             dog.GetComponent<Doggy>().StartMoving(TilePath);
@@ -314,20 +245,17 @@ public class GridManager : MonoBehaviour
 
     void SetSheepGridVisibility(bool visible)
     {
-        // Toggle sheep grid visibility
         foreach (GameObject sheep in Game.Sheeps)
             sheep.GetComponent<Sheepy>().showGridObj = visible;
     }
 
     void ResetLevel()
     {
-        // Reload current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator ShowTutorial()
     {
-        // Display tutorial popup
         yield return new WaitForSeconds(0.2f);
         if (Game.ActiveLogic)
         {
@@ -340,32 +268,19 @@ public class GridManager : MonoBehaviour
 
     void ClearTilePath()
     {
-        // Reset all tiles in current path
         foreach (GameObject tile in TilePath)
             tile.GetComponent<GridTile>().selected = false;
 
-        // Clear path data
         TilePath.Clear();
         line.points.Clear();
-        rotatedSheep.Clear();
 
-        // Reset line renderer to dog's position
+        // Start with dog's position
         line.AddPoint(new Vector3(dog.transform.position.x, dog.transform.position.z, 0));
         currentMoves = 0;
-
-        // Set current input tile to dog's position
-        currentTileForInput = GetTileAtPosition(new Vector2Int(
-            Mathf.RoundToInt(dog.transform.position.x),
-            Mathf.RoundToInt(dog.transform.position.z)
-        ));
     }
 
-    // =====================
-    // == GRID GENERATION ==
-    // =====================
     void GenerateGrid()
     {
-        // Create grid points and instantiate tiles
         gridpoints = GetGridPoints(Vector3Int.RoundToInt(transform.position), GridSize);
 
         foreach (Vector3Int gpoint in gridpoints)
@@ -378,7 +293,6 @@ public class GridManager : MonoBehaviour
 
     public List<Vector3Int> GetGridPoints(Vector3Int pos, Vector2Int size)
     {
-        // Generate grid points within specified size, skipping blocked positions
         List<Vector3Int> gridPoints = new List<Vector3Int>();
         Blockers = GameObject.FindGameObjectsWithTag("BLOCKER");
 
@@ -401,7 +315,6 @@ public class GridManager : MonoBehaviour
 
     bool IsPositionBlocked(Vector3Int position)
     {
-        // Check if position is occupied by a blocker
         foreach (GameObject blocker in Blockers)
         {
             if (blocker.transform.position == (Vector3)position)
@@ -410,12 +323,8 @@ public class GridManager : MonoBehaviour
         return false;
     }
 
-    // =====================
-    // == EDITOR TOOLS ==
-    // =====================
     void OnDrawGizmos()
     {
-        // Update grid visualization when parameters change
         if (GridSize != currentGridSize || GridOffset != currentGridOffset)
         {
             currentGridSize = GridSize;
@@ -423,12 +332,10 @@ public class GridManager : MonoBehaviour
             gridpoints = GetGridPoints(Vector3Int.RoundToInt(transform.position), GridSize);
         }
 
-        // Draw grid boundary
         Gizmos.color = new Color(0, 0.5f, 0.25f, 1);
         Gizmos.DrawWireCube(transform.position + new Vector3(GridOffset.x, 0, GridOffset.y),
                            new Vector3(GridSize.x * 2 + 1, 0, GridSize.y * 2 + 1));
 
-        // Draw grid points
         foreach (Vector3Int point in gridpoints)
         {
             Gizmos.color = new Color(0, 1, 0.5f, 0.25f);
