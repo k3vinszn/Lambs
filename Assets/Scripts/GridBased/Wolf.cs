@@ -18,7 +18,7 @@ public class Wolf : MonoBehaviour {
    
     // MY CHANGES
 
-    public float ChaseRadius = 1.4f;
+    public float ChaseRadius = 20.4f;
 
     public float FleeDistance = 2.8f;
 
@@ -216,6 +216,7 @@ public class Wolf : MonoBehaviour {
         {
             closestSheep = target;
             currentIndex = 0;
+            Debug.Log("Closest sheep:" + (closestSheep != null ? closestSheep.name : "NONE"));
         }
         else
         {
